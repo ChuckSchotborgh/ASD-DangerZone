@@ -1,0 +1,218 @@
+<!--Chuck Schotborgh ASD 07/2012 project 1-->
+<!-- HTML TAG -->  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+		
+		<title>
+			Seventy Times Seven Application
+		</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	
+	<meta name="HandheldFriendly"
+		  content="True">
+		
+	<meta name="MobileOptimized"
+		  content="320">
+		
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0">
+	
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype"
+		  content="on">
+		
+	<link rel="stylesheet"
+		  href="css/styles.css"
+		  type="text/css">
+	
+	<link rel='stylesheet'
+		  href='http://fonts.googleapis.com/css?family=Lobster'
+		  type='text/css'>
+
+	<link rel="stylesheet"
+		  href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	
+	<!-- JavaScript is normally at the end of the body,
+	except for Modernizr which enables HTML5 elements &
+	feature detects -->
+
+</head>
+<body>
+<div data-role="page"
+	 class="type-interior"
+	 id="2">
+	
+	<div data-role="header"
+		 data-theme="a"
+		 data-postion="fixed">
+		
+		<img src="images/hdr.png"
+			 alt="Forgive Me"
+			 data-position="fixed">
+			
+		<div data-role="navbar">
+			<ul>
+				<li>
+					<a href="index.html"
+					   data-theme="c"
+					   data-icon="home"
+					   class="ui-btn-active" >
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="#"
+					   data-theme="c"
+					   data-icon="star">
+						Mailbox
+					</a>
+				</li>
+				<li>
+					<a href="page-crud-settings-options.html"
+					   data-theme="c"
+					   data-icon="star">
+						Options
+					</a>
+				</li>
+				<li>
+					<a href="additem.html"
+					   data-theme="c"
+					   data-icon="star">
+						Update
+					</a>
+				</li>
+			</ul>
+		</div><!-- /navbar -->
+</div><!-- /page -->
+
+<div data-role="content">
+	<div class="content-primary">
+		<ul data-role="listview" data-filter="true">
+			<li data-role="list-divider">Friday, May 05, 2012 <span class="ui-li-count">2</span></li>
+			<li><a href="index.html"><img src="images/128x128/128-1.png" alt="Sad" data-position="fixed">
+				<h3>Deborah Schotborgh</h3>
+				<p><strong>Forgiveness Gesture Accepted</strong></p>
+				<p><strong>Your Lovely Wife</strong></p>
+				<p class="ui-li-below"> Luv your so funny, I love making up with you. I chose to send my response with a teddy...Teddy bear that is ;)</p> 
+				<p class="ui-li-aside"><strong>8:18</strong>AM</p>	
+		</a></li>
+			<li><a href="index.html"><img src="images/128x128/128-2.png" alt="Sad" data-position="fixed">
+				<h3>Bryan Meyers</h3>
+				<p><strong>Forgiveness Gesture Pending</strong></p>
+				<p><strong>Friend</strong></p>
+				<p class="ui-li-aside"><strong>7:14</strong>PM</p>
+		</a></li>
+		<li data-role="list-divider">Thursday, April 21, 2012 <span class="ui-li-count">1</span></li>
+			<li><a href="index.html"><img src="images/128x128/128-3.png" alt="Sad" data-position="fixed">
+				<h3>Deborah Schotborgh</h3>
+				<p><strong>Forgiveness Gesture Accepted</strong></p>
+				<p><strong>Your Lovely Wife</strong></p>
+				<p><strong>Re: Dinner Tonight</strong></p>
+				<p>Sure, let's plan on meeting at Bankok Cusine at 6:00 tonight. I'm Hyper excited Can't wait! </p>
+				<p class="ui-li-aside"><strong>3:38</strong>PM</p>
+		</a></li>
+		<li data-role="list-divider">Wednesday,  April 19, 2012 <span class="ui-li-count"></span></li>
+			<li><a href="index.html"><img src="images/128x128/128-4.png" alt="Sad" data-position="fixed">
+				<h3>Josiah Schotborgh</h3>
+				<p><strong>Forgiveness Gesture Accepted</strong></p>
+				<p><strong>Your Oldest Son</strong></p>
+				<p>Dad it's allright. I sent you a message in a bottle </p>
+				<p class="ui-li-aside"><strong>2:58</strong>PM</p>
+		</a></li>
+			<li><a href="index.html"><img src="images/128x128/128-5.png" alt="Sad" data-position="fixed">
+				<h3>Ethan Schotborgh</h3>
+				<p><strong>Forgiveness Gesture Pending</strong></p>
+				<p><strong>Middle Son</strong></p>
+				<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+		</a></li>
+			<li data-role="list-divider">Tuesday, October 5, 2010 <span class="ui-li-count">2</span></li>
+			<li><a href="index.html"><img src="images/128x128/128-6.png" alt="Sad" data-position="fixed">
+				<h3>Hannah Schotborgh</h3>
+				<p><strong>Forgiveness Gesture Pending</strong></p>
+				<p><strong>Middle Son</strong></p>
+				<p class="ui-li-aside"><strong>1:40</strong>PM</p>
+			</a></li>
+			<li><a href="index.html"><img src="images/128x128/128-7.png" alt="Sad" data-position="fixed">
+				<h3>Anika Schotborgh</h3>
+				<p><strong>Forgiveness Gesture Pending</strong></p>
+				<p><strong>Middle Son</strong></p>
+				<p class="ui-li-aside"><strong>8:22</strong>PM</p>
+			</a></li>
+		</ul>
+	</div><!--/content-primary -->		
+</div>
+	<div class="content-secondary">
+		<div data-role="collapsible" data-collapsed="true" data-theme="a" data-content-theme="c">
+		<h3>More in this section</h3>
+			<ul data-role="listview">
+			<li data-role="list-divider">Friday, October 22, 2012 <span class="ui-li-count">1</span></li>
+			<li><a href="index.html"><img src="images/128x128/128-8.png" alt="Sad" data-position="fixed">
+				<h3>James Mathews</h3>
+				<p><strong>Forgiveness Gesture Accepted</strong></p>
+				<p><strong>Friend</strong></p>
+				<p><strong>I accept your gesture of forgiveness. I chose to blow it up. It was fun!</strong></p>
+				<p>Hey Chuck, if you're available at 9am tomorrow, let's get some breakfast.</p>
+				<p class="ui-li-aside"><strong>8:24</strong>PM</p>
+			</a></li>
+			<li data-role="list-divider">Thursday, April 21, 2012 <span class="ui-li-count">1</span></li>
+			<li><a href="index.html"><img src="images/128x128/128-9.png" alt="Sad" data-position="fixed">
+				<h3>Garrett Schotborgh</h3>
+				<p><strong>Forgiveness Gesture Accepted</strong></p>
+				<p><strong>Your Lovely Wife</strong></p>
+				<p><strong>Re: Dinner Tonight</strong></p>
+				<p>Sure, let's plan on meeting at Bankok Cusine at 6:00 tonight. I'm Hyper excited Can't wait! </p>
+				<p class="ui-li-aside"><strong>3:38</strong>PM</p>
+			</a></li>
+			<li data-role="list-divider">Wednesday,  October  19, 2012 <span class="ui-li-count">3</span></li>
+			<li><a href="index.html"><img src="images/128x128/128-10.png" alt="Sad" data-position="fixed">
+				<h3>Josiah Schotborgh</h3>
+				<p><strong>Forgiveness Gesture Accepted</strong></p>
+				<p><strong>Your Oldest Son</strong></p>
+				<p>Dad it's allright. I sent you a message in a bottle </p>
+				<p class="ui-li-aside"><strong>5:58</strong>PM</p>
+			</a></li>
+			<li><a href="index.html"><img src="images/128x128/128-11.png" alt="Sad" data-position="fixed">
+				<h3>Judah Schotborgh</h3>
+				<p><strong>Forgiveness Gesture Accepted</strong></p>
+				<p><strong>Middle Son</strong></p>
+				<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+			</a></li>
+			<li data-role="list-divider">Tuesday, October 15, 2012 <span class="ui-li-count">3</span></li>
+			<li><a href="index.html"><img src="images/128x128/128-12.png" alt="Sad" data-position="fixed">
+				<h3>Hannah Schotborgh</h3>
+				<p><strong>Forgiveness Gesture Accepted</strong></p>
+				<p><strong>Middle Son</strong></p>
+				<p class="ui-li-aside"><strong>1:40</strong>PM</p>
+				</a></li>
+			<li><a href="index.html"><img src="images/128x128/128-12.png" alt="Sad" data-position="fixed">
+				<h3>Anika Schotborgh</h3>
+				<p><strong>Forgiveness Gesture Accepted</strong></p>
+				<p><strong>Middle Son</strong></p>
+				<p class="ui-li-aside"><strong>3:22</strong>PM</p>
+				</a></li>
+			<li><a href="index.html"><img src="images/128x128/128-13.png" alt="Sad" data-position="fixed">
+				<h3>Midnight Schotborgh</h3>
+				<p><strong>Forgiveness Gesture Accepted</strong></p>
+				<p><strong>your cat?</strong></p>
+				<p class="ui-li-aside"><strong>7:32</strong>PM</p>
+			</a></li>
+		</ul>
+	</div>	
+</div><!-- /content -->
+</div><!-- /page -->
+
+	<!-- JavaScript under here -->
+		<script
+		src="http://code.jquery.com/jquery-1.6.4.min.js">
+		</script>
+		
+		<script
+		src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+		</script>
+
+</body>
+</html>

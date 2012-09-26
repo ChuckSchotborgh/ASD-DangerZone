@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--Chuck Schotborgh ASD 07/2012 project 1-->
+<!-- HTML TAG -->  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+		
+		<title>
+			Seventy Times Seven Application
+		</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	
+	<meta name="HandheldFriendly"
+		  content="True">
+		
+	<meta name="MobileOptimized"
+		  content="320">
+		
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0">
+	
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype"
+		  content="on">
+		
+	<link rel="stylesheet"
+		  href="css/styles.css"
+		  type="text/css">
+	
+	<link rel='stylesheet'
+		  href='http://fonts.googleapis.com/css?family=Lobster'
+		  type='text/css'>
+
+	<link rel="stylesheet"
+		  href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	
+	<!-- JavaScript is normally at the end of the body,
+	except for Modernizr which enables HTML5 elements &
+	feature detects -->
+
+</head>
+<body>
+<div data-role="page"
+	 class="type-interior"
+	 id="0">
+	
+	<div data-role="header"
+		 data-theme="a"
+		 data-postion="fixed">
+		
+		<img src="images/hdr.png"
+			 alt="Forgive Me"
+			 data-position="fixed">
+			
+		<div data-role="navbar">
+			<ul>
+				<li>
+					<a href="#"
+					   data-theme="c"
+					   data-icon="home"
+					   class="ui-btn-active" >
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="page-mailbox.html"
+					   data-theme="c"
+					   data-icon="star">
+						Mailbox
+					</a>
+				</li>
+				<li>
+					<a href="page-crud-settings-options.html"
+					   data-theme="c"
+					   data-icon="star">
+						Options
+					</a>
+				</li>
+				<li>
+					<a href="additem.html"
+					   data-theme="c"
+					   data-icon="star">
+						Update
+					</a>
+				</li>
+			</ul>
+		</div><!-- /navbar -->
+</div><!-- /page -->
+
+
+
+		<div data-role="content"
+			 data-theme="c"
+			 class="ui-body ui-body-c ui-corner-all">
+			<h2>
+				<center>
+					A Novel Way to Ask Forgiveness!
+
+				</center>
+			</h2>
+			<center>
+			<img src="images/128x128/128-29.png"
+				 alt="Forgive Me"
+				 data-position="fixed">
+			</center>
+		</div><!--/title -->
+	
+
+
+<div data-role="collapsible"
+	 data-collapsed="true"
+	 data-theme="b"
+	 class="ui-body ui-body-c ui-corner-all"
+	 id="data-buttons">
+	
+	<h4>Data list Settings & Options</h4>
+		<ul data-role="listview"
+			data-theme="d"
+			data-dividertheme="d">
+			
+			<li data-role="list-divider">
+				Please Select List Options
+			</li>
+			
+			<li>
+				<a href="#"
+				   data-theme="d"
+				   id="json-button">
+					FriendsList
+				</a>
+				
+			</li>
+			
+			<li data-theme="a">
+				<a href="#"
+				   data-theme="c"
+				   id="xml-button">
+					MyLocalStorage
+				</a>
+			</li>
+			
+			<li>
+				<a href="#"
+				   data-theme="c"
+				   id="csv-button">
+					MyData
+				</a>
+			</li>
+				<ul 
+		id="formList"
+		class='formlist'
+	</ul>
+		</ul>
+		</div><!--/Browse -->
+	</div>
+</div><!--/HomePage -->
+
+
+
+<div data-role="page"
+	 class="type-interior"
+	 id="search">
+	
+	<div data-role="header"
+		 data-theme="a"
+		 data-postion="fixed">
+		
+		<img src="images/hdr.png"
+			 alt="Forgive Me"
+			 data-position="fixed">
+			
+		<div data-role="navbar">
+			<ul>
+				<li>
+					<a href="#home"
+					   data-icon="home"
+					   data-rel="back"
+					   data-theme="c">
+						Home
+					</a>
+				</li>
+				
+				<li>
+					<a href="additem.html"
+					   data-icon="star"
+					   data-theme="d">
+						iForgive
+					</a>
+				</li>
+				<li>
+					<a href="tagged-gestures.html"
+					   data-icon="star"
+					   data-theme="d">
+						Mailbox
+					</a>
+				</li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /page -->
+	
+<div data-role="content">
+	<div class="content-primary">	
+		<ul data-role="listview"
+			data-filter="true"
+			data-filter-placeholder="Search people..."
+			data-filter-theme="c" >
+			
+		<li><a href="scrollview-x-direction.html">
+			<img src="https://fbcdn-sphotos-a.akamaihd.net/hphotos-ak-snc6/163835_579778172969_23801367_32659600_931216_n.jpg"
+				 alt="FriendsName"
+				 width="100"
+				 height="175"/>
+			<h3>Andrea Johnson</h3>
+			<p>
+				<strong>
+					Multnomah Portland, Oregon
+				</strong>
+			</p>
+			
+			</a>
+			<a href="scrollview-x-direction.html"
+				   data-rel="dialog"
+				   data-transition="none">
+					Send a Gesture
+			</a>
+		</li>
+		
+	</div><!--/content -->
+</div><!--/content-primary -->
+
+	<!-- JavaScript under here -->
+		<script
+		src="http://code.jquery.com/jquery-1.6.4.min.js">
+		</script>
+		
+		<script
+		src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+		</script>
+		
+		<script
+		src="js/JSON.js" type="text/javascript">
+		</script>	
+
+
+</body>
+</html>

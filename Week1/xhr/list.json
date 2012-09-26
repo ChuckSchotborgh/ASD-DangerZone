@@ -1,0 +1,62 @@
+
+{
+"fofInfo":
+        [
+            {
+            "firstName": "Hannah Schotborgh",
+            "lastName": "Schotborgh",
+            "email": "Hannah@fake-n-the-email.com",
+            "gesture": "I'm such a pin-head",
+            "textArea": "I'm sorry I wrecked your Mom last night!Please forgive me?",
+            "tone": 33,
+            "toggle": "I'm a friend today",
+            "pic": "pin.png"
+            },
+            {
+            "firstName": "Garrett Schotborgh",
+            "lastName": "Schotborgh",
+            "email": "Garrett@fake-n-the-email.com",
+            "gesture": "I'm such a pin-head",
+            "textArea": "I'm sorry I wrecked your house last night! Please forgive me?",
+            "tone": 44,
+            "toggle": "I'm a friend today",
+            "pic": "dweeb.png"
+            },
+            {
+            "firstName": "Debbie Schotborgh",
+            "lastName": "Schotborgh",
+            "email": "Debbie@fake-n-the-email.com",
+            "gesture": "I'm such a pin-head",
+            "textArea": "I'm sorry I wrecked your Yacht last night!Please forgive me?",
+            "tone": 55,     
+            "pic": "bone.png"
+            },
+            {
+            "firstName": "Josiah Schotborgh",
+            "lastName": "Schotborgh",
+            "email": "Josiah@fake-n-the-email.com",
+            "gesture": "I'm such a pin-head",
+            "textArea": "I'm sorry I wrecked your car last night!Please forgive me?",
+            "tone": 66,   
+            "pic": "loser.png"
+            },
+            {
+            "firstName": "Ethan Schotborgh",
+            "lastName": "Schotborgh",
+            "email": "Ethan@fake-n-the-email.com",
+            "gesture": "I'm such a pin-head",
+            "textArea": "I'm sorry I wrecked your car last night!Please forgive me?",
+            "tone": 77,     
+            "pic": "butt.png"
+            },
+            {
+            "firstName": "Judah Schotborgh",
+            "lastName": "Schotborgh",
+            "email": "Judah@fake-n-the-email.com",
+            "gesture": "I'm such a pin-head",
+            "textArea": "I'm sorry I wrecked your car last night!Please forgive me?",
+            "tone": 2,        
+            "pic": "jack.png"
+            }
+        ]
+}

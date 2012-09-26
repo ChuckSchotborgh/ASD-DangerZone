@@ -1,0 +1,156 @@
+
+body{
+font-family: 'Arial', sans-serif; font-weight: 400;
+background-size: auto;
+}
+
+h1{
+font-family: 'Lobster', cursive; font-weight: 400;
+float: none;
+}
+
+h2{
+font-family: 'Lobster', cursive; font-weight: 200;
+}
+
+#errors {
+font-family: 'Arial', sans-serif; font-weight: 400; color: #cd3133; padding: 10px; font-weight: inherit;
+}
+
+#select{
+font-family: 'Lobster', cursive; font-weight: 300;
+}
+
+.Label{
+font-family: 'Lobster', cursive; font-weight: 400;
+}
+
+#contactForm {
+font-family: 'Lobster', cursive; font-weight: 400; color: #433a34; padding: 10px; font-weight: inherit;
+}
+
+.ui-btn-text{
+white-space: normal;
+}
+
+.ui-li-desc {
+white-space: normal;
+}
+
+ui-content.ui-scrollview-clip {
+padding: 0;
+}
+
+.ui-content.ui-scrollview-clip > div.ui-scrollview-view {
+white-space: normal;
+padding: 0;
+}
+.ui-content.ui-scrollview-clip > .ui-listview.ui-scrollview-view {
+margin: 0;
+}
+.square {
+width: auto;
+border: solid 1px #333;
+text-align: center;
+line-height: 100px;
+font-size: 60px;
+}
+
+.ui-scrollview-clip .ui-scrollview-clip .square {
+background-color: #333;
+}
+
+.ui-scrollview-clip .ui-scrollview-clip .ui-scrollview-clip .square {
+background-color: #111;
+}
+
+.ui-scrollview-clip .ui-scrollview-clip .ui-scrollview-clip .ui-scrollview-clip .square {
+background-color: #000;
+}
+
+.ui-scrollview-clip .ui-scrollview-clip .ui-scrollview-clip .ui-scrollview-clip .ui-scrollview-clip .square {
+background-color: #333;
+}
+
+.threeByThree {
+border: solid 1px black;
+background-color: #222;
+overflow: hidden;
+width: inherit;
+height: 175px;
+}
+
+.threeByThree > .ui-scrollview-view {
+width: 6800px;
+height: 175px;
+background-color: #222;
+}
+
+.threeByThree .square {
+float: left;
+}
+
+label.error{
+display:block;
+font-family: 'Lobster', cursive; font-weight: 300;
+margin:10px 0;
+color: #cc0000;
+}
+
+#display {
+background: #222;
+color: #111;
+text-shadow: 1px 1px 2px #aaa;
+}
+
+#textArea {
+background: none;
+color: #727272;
+
+}
+
+#fof-list {
+margin: 12px;
+padding: 12px;
+text-shadow: 1px 1px 2px #111;
+}
+
+#formList {
+margin: 12px;
+padding: 12px;
+font-family: 'Lobster', cursive; font-weight: 400;
+button.css3button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#a3a3a3 0%,
+		#3b3b3b 50%,
+		#242424 50%,
+		#000000);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#a3a3a3),
+		color-stop(0.50, #3b3b3b),
+		color-stop(0.50, #242424),
+		to(#000000));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #000000;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.6);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.6);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.6);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,1),
+		0px 1px 0px rgba(255,255,255,0.2);
+}
+
