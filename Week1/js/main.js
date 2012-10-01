@@ -1,4 +1,4 @@
-// CHUCK SCHOTBORGH ASD1207- ADVANCED SCALABLE DATA INFASTRUCTURES\\______WEEK 4
+// CHUCK SCHOTBORGH ASD-y12m10- ADVANCED SCALABLE DATA INFASTRUCTURES
 
 // INITIATING THE PAGE + TURNING OFF THE AJAX \\________________________________
 
@@ -163,31 +163,31 @@
                         
 // FIELD DECLARATIONS PASSING  <XML> TAGS TO THE DOM\\__________________________
             
-                    var name         =     $(this).find    ('name')        .text();
-                    var friend         =     $(this).find    ('friend')        .text();
-                    var remarks     =     $(this).find    ('action')        .text();
-                    var email         =     $(this).find    ('email')        .text();
-                    var date         =     $(this).find    ('date')        .text();
-                    var incident     =     $(this).find    ('incident')    .text();
-                    var genre         =     $(this).find    ('genre')        .text();
-                    var website     =     $(this).find    ('website')        .text();
-                    var socials     =     $(this).find    ('socials')        .text();
-                    var length         =     $(this).find    ('length')        .text();
+                    var name         =     $(this).find    ('name')          .text();
+                    var friend       =     $(this).find    ('friend')        .text();
+                    var remarks      =     $(this).find    ('action')        .text();
+                    var email        =     $(this).find    ('email')         .text();
+                    var date         =     $(this).find    ('date')          .text();
+                    var incident     =     $(this).find    ('incident')      .text();
+                    var genre        =     $(this).find    ('genre')         .text();
+                    var website      =     $(this).find    ('website')       .text();
+                    var socials      =     $(this).find    ('socials')       .text();
+                    var length       =     $(this).find    ('length')        .text();
             
                     
 // CREATE TAGS TO THE DOM \\____________________________________________________
                     
                     var actionString = $('<div data-role="collapsible" data-theme="c">' +
                       '<h3>' + name + '</h3>' +
-                      '<p>    <strong>  Friend:      </strong>     ' + friend +     '</p>' +
-                      '<p>    <strong>  Email:      </strong>     ' + email +     '</p>' +
-                      '<p>    <strong>  Remarks:     </strong>    ' + text +         '</p>' +           
-                      '<p>    <strong>  Date:      </strong>     ' + date +         '</p>' +
-                      '<p>    <strong>  Incidents: </strong>     ' + incident +     '</p>' +
-                      '<p>    <strong>  Genre:     </strong>     ' + genre +     '</p>' +
-                      '<p>    <strong>  Website:     </strong>    ' + website +     '</p>' +
-                      '<p>    <strong>  Socials:     </strong>     ' + socials +    '</p>' +
-                      '<p>    <strong>  Length:     </strong>     ' + length +     '</p>' +
+                      '<p>    <strong>  Friend:      </strong>     ' + friend +       '</p>' +
+                      '<p>    <strong>  Email:       </strong>     ' + email +        '</p>' +
+                      '<p>    <strong>  Remarks:     </strong>     ' + text +         '</p>' +           
+                      '<p>    <strong>  Date:        </strong>     ' + date +         '</p>' +
+                      '<p>    <strong>  Incidents:   </strong>     ' + incident +     '</p>' +
+                      '<p>    <strong>  Genre:       </strong>     ' + genre +        '</p>' +
+                      '<p>    <strong>  Website:     </strong>     ' + website +      '</p>' +
+                      '<p>    <strong>  Socials:     </strong>     ' + socials +      '</p>' +
+                      '<p>    <strong>  Length:      </strong>     ' + length +       '</p>' +
                       '</div>').appendTo
                         ('#blast-off #blast-off-action-list');
                     
@@ -231,31 +231,31 @@
                     
 // FIELD DECLARATIONS PASSING  <XML> TAGS TO THE DOM\\__________________________
             
-                    var name         =     $(this).find    ('name')        .text();
-                    var friend         =     $(this).find    ('friend')        .text();
-                    var email         =     $(this).find    ('email')        .text();
-                    var remarks     =     $(this).find    ('action')        .text();
-                    var date         =     $(this).find    ('date')        .text();
-                    var incident     =     $(this).find    ('incident')    .text();
-                    var genre         =     $(this).find    ('genre')        .text();
-                    var website     =     $(this).find    ('website')        .text();
-                    var socials     =     $(this).find    ('socials')        .text();
-                    var length         =     $(this).find    ('length')        .text();
+                    var name         =     $(this).find    ('name')           .text();
+                    var friend       =     $(this).find    ('friend')         .text();
+                    var email        =     $(this).find    ('email')          .text();
+                    var remarks      =     $(this).find    ('action')         .text();
+                    var date         =     $(this).find    ('date')           .text();
+                    var incident     =     $(this).find    ('incident')       .text();
+                    var genre        =     $(this).find    ('genre')          .text();
+                    var website      =     $(this).find    ('website')        .text();
+                    var socials      =     $(this).find    ('socials')        .text();
+                    var length       =     $(this).find    ('length')         .text();
                     
                     
 // CREATE TAGS TO THE DOM \\____________________________________________________
                     
                     var actionString = $('<div data-role="collapsible" data-theme="c">' +
                       '<h3>' + name + '</h3>' +
-                      '<p>    <strong>  Friend:      </strong>     ' + friend +     '</p>' +
-                      '<p>    <strong>  Email:      </strong>     ' + email +     '</p>' +
-                      '<p>    <strong>  Date:      </strong>     ' + date +         '</p>' +
-                      '<p>    <strong>  Incidents: </strong>     ' + incident +     '</p>' +
-                      '<p>    <strong>  Genre:     </strong>     ' + genre +     '</p>' +
-                      '<p>    <strong>  Website:     </strong>    ' + website +     '</p>' +
-                      '<p>    <strong>  Socials:     </strong>     ' + socials +    '</p>' +
-                      '<p>    <strong>  Length:     </strong>     ' + length +     '</p>' +
-                      '<p>    <strong>  Remarks:     </strong>    ' + text +         '</p>' +
+                      '<p>    <strong>  Friend:      </strong>     ' + friend +       '</p>' +
+                      '<p>    <strong>  Email:       </strong>     ' + email +        '</p>' +
+                      '<p>    <strong>  Date:        </strong>     ' + date +         '</p>' +
+                      '<p>    <strong>  Incidents:   </strong>     ' + incident +     '</p>' +
+                      '<p>    <strong>  Genre:       </strong>     ' + genre +        '</p>' +
+                      '<p>    <strong>  Website:     </strong>     ' + website +      '</p>' +
+                      '<p>    <strong>  Socials:     </strong>     ' + socials +      '</p>' +
+                      '<p>    <strong>  Length:      </strong>     ' + length +       '</p>' +
+                      '<p>    <strong>  Remarks:     </strong>     ' + text +         '</p>' +
                       '</div>').appendTo
                         ('#devcon #devcon-action-list');
                       
@@ -992,8 +992,6 @@ if(opt === 'edit') {
         }
     };
 
-
-
 // VALIDATE ALL FUNCTION \\_____________________________________________________
 
     var validateForm = function (postID) {
@@ -1072,8 +1070,8 @@ if(opt === 'edit') {
 		
 		$('#select > div').css
 			("border", "1px solid red") ;
-	hasError = true;
-	}
+        hasError = true;
+        }
 
 //Set Errors  \\_____________________________________________________
 
@@ -1092,27 +1090,27 @@ if(opt === 'edit') {
 
 // STORE FUNCTION \\_____________________________________________________
 
-$('#submit').on('click', function storeData(key) {
-
-if(validateForm()) {
+    $('#submit').on('click', function storeData(key) {
+    
+    if(validateForm()) {
 
 //Create new key if one doesn't exist.\\________________________________________
-
-if(!key) {
-
-var id = Math.floor(Math.random()*10000001);
-}else{
+    
+    if(!key) {
+    
+    var id = Math.floor(Math.random()*10000001);
+    }else{
 
 //Use the existing key.\\_____________________________________________________
 
-var id = key;
-}
-
-if ($('#genre').val() === 'Private') {
-var website = $('#website-pop').val();
-} else if ($('#genre').val() === 'Popular') {
-var website = $('#website-popular').val();
-}
+    var id = key;
+    }
+    
+    if ($('#genre').val() === 'Private') {
+    var website = $('#website-pop').val();
+    } else if ($('#genre').val() === 'Popular') {
+    var website = $('#website-popular').val();
+    }
 
 // Gather up all form values and labels.\\_______________________________________
 //Find the value of the selected radio button.\\_________________________________
