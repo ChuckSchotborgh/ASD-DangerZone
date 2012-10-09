@@ -1,0 +1,765 @@
+<!doctype html> 
+<!--CHUCK SCHOTBORGH ASD-y12m10- ADVANCED SCALABLE DATA INFASTRUCTURES-->
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>RadioStation+&reg;</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	
+	<meta name="HandheldFriendly"
+		  content="True">
+		
+	<meta name="MobileOptimized"
+		  content="320"/>
+	
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	
+	<meta popular-equiv="cleartype"
+		  content="on">
+	
+	<!-- StyleSheets under here -->
+	
+	<link rel="stylesheet"
+		  href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	
+	<link rel="stylesheet"
+		  type="text/css"
+		  href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" />
+	
+	<link rel="stylesheet"
+		  href="css/styles.css" />	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 eleblastoffsts & feature detects -->
+	
+	<script
+			src="js/libs/modernizr.custom.min.js">
+	</script>
+
+</head>
+<body id="index">
+<div data-role="page"
+	 id="home"
+	 data-theme="b">
+	
+	<div id="header"
+		 data-role="header"
+		 data-theme="c">
+		
+		<img src="images/VendettaLogo.png"
+			 id="logo"
+			 width=""><!-- /top header -->
+			
+			<h1 class="hidden"></h1>
+	</div>
+	
+	<div data-role="content"
+		 id="content">
+		
+		<div id="feature">
+			
+			<a href="additem.html"
+			   data-transition="slide"
+			   rel="external">
+				
+				<center>
+					<img src="images/splash.png"
+					 width="100%">
+				</center><!-- /splash cta -->
+					  
+			</a>
+			
+		</div>
+		
+		<ul data-role="listview"
+			data-inset="true"
+			data-theme="c"
+			data-dividertheme="d">
+			
+			<li data-role="list-divider">
+				STRESS RELEASE OPTIONS-A [Agressive Intervention]
+			</li><!-- /divider -->
+			
+			<li>
+				<a href="#Burns"
+				   data-transition="slide">
+					<img src="images/album-k.jpg"  />
+					<h2>Burn Notice</h2>
+					<p>Light it up</p>
+					<span class="ui-li-count">1</span>
+				</a>
+			</li><!-- /listview button -->
+			
+			<li>
+				<a href="#blast-off"
+				   data-transition="slide">
+					<img src="images/album-xx.jpg"/>
+					<h3>Blast OFF</h3>
+					<p>Launch into Space</p>
+					<span class="ui-li-count">1</span>
+				</a>
+			</li><!-- /listview button -->
+			
+			<li>
+				<a href="#devcon"
+				   data-transition="slide">
+				<img src="images/album-ok.jpg"/>
+					<h3>Devcon 5</h3>
+					<p>Armed to Launch</p>
+					<span class="ui-li-count">1</span>
+				</a>
+			</li><!-- /listview button -->
+			
+			<li data-role="list-divider">
+				STRESS RELEASE OPTIONS-B [Extreme Intervention]
+			</li><!-- /divider -->
+			
+			<li>
+				<a href="#bombs-away"
+				   data-transition="slide">
+					<img src="images/album-p.jpg" />
+					<h3>bombs Away</h3>
+					<p>Fuse or Time Charged</p>
+					<span class="ui-li-count">1</span>
+				</a>
+			</li><!-- /listview button -->
+			
+			<li>
+				<a href="#missiles" data-transition	="slide">
+					<img src="images/album-rh.jpg" />
+					<h3>Missile Strike</h3>
+					<p>Missiles Away</p>
+					<span class="ui-li-count">1</span>
+				</a>
+			</li><!-- /listview button -->
+			
+		</ul>
+	</div>
+		
+	<div data-role="footer"
+		 data-position="fixed"
+		 data-theme="c">
+		
+		<div data-role="navbar">
+			
+				<ul>
+					<li>
+						<a href="#"
+						   data-icon="delete"
+						   rel="external"
+						   id="clear"
+						   onclick="clear();">
+							Clear All
+						</a>
+					</li>
+					
+					<li>
+						<a href="https://github.com/ChuckSchotborgh/ASD-DangerZone/tree/gh-pages/Week1"
+						   data-icon="star"
+						   rel="external">
+							My GitHUB
+						</a>
+					</li>
+				</ul>
+				
+		</div>
+		
+		<h4>&copy;2012 Studio*357*&reg;</h4>
+		
+	</div>
+</div><!-- END MAIN LISTVIEW PAGE -->
+	
+	<div data-role="page"
+		 id="Burns"
+		 data-add-back-btn="true"
+		 data-theme="b" >
+		
+		<div data-role="header"
+			 data-position="fixed"
+			 data-theme="b">
+			
+			<a href="view.html"
+			   data-rel="back"
+			   data-direction="reverse"
+			   data-icon="arrow-l">Back</a>
+			
+			<h1 id="headerTitle">Burners</h1>
+			
+			<a href="index.html"
+			   rel="external"
+			   data-iconpos="notext"
+			   data-icon="home">Home
+			</a>
+			
+		</div>
+		<div id="content"
+			 data-role="content"
+			 data-theme="b">
+			
+			<ul id="frustrated-list"
+				data-role="listview"
+				data-inset="true"
+				data-filter="true"
+				data-theme="c"
+			</ul>
+			
+			<div id="getListButton">
+				
+				<p>
+					Hello there! Stressed, angry  or frustrated?
+					Choose a button see older rants or post another one.       
+				</p>
+				
+				<a href="#"
+				   id="load-burns"
+				   data-icon="plus"
+				   data-role="button"
+				   data-theme="b">
+					Load Social BURNS
+				</a>
+				
+			</div>
+			
+			<div >
+				<a href="additem.html"
+				   id="addNew"
+				   data-icon="plus"
+				   data-role="button"
+				   data-theme="b"
+				   rel="external">
+					Add New action
+				</a>
+				
+			</div>
+			
+  		</div>
+	
+		<div data-role="footer"
+			 data-position="fixed"
+			 data-theme="c">
+			
+			<div data-role="navbar"
+				 id="navbar">
+				
+				<ul>
+					<li>
+						<a href="#"
+						   data-icon="delete"
+						   rel="external"
+						   id="clear"
+						   onclick="clear();">
+							Clear All
+						</a>
+					</li>
+					
+					<li><a href="https://github.com/ChuckSchotborgh/asd/tree/gh-pages"
+						   data-icon="star"
+						   rel="external">
+							My GitHUB</a>
+					</li>
+				</ul>
+				
+			</div><!-- /navbar -->
+			
+			<h4>&copy;2012 Studio*357*&reg;</h4>
+			
+		</div>
+	</div><!-- END BURN NOTICE PAGE -->
+
+	<div data-role="page"
+		 id="blastoffs"
+		 data-add-back-btn="true"
+		 data-theme="b"
+		 data-cache="never"
+		 data-cache="never">
+		
+		<div data-role="header"
+			 data-position="fixed"
+			 data-theme="b">
+			
+			<a href="view.html"
+			   data-rel="back"
+			   data-direction="reverse"
+			   data-icon="arrow-l">Back
+			</a>
+			
+			<h1 id="headerTitle">blastoffs</h1>
+			
+			<a href="index.html"
+			   rel="external"
+			   data-iconpos="notext"
+			   data-icon="home">
+				Home
+			</a>
+			
+		</div>
+		
+		<div id="content"
+			 data-role="content"
+			 data-theme="b">
+			
+			<div id="blastoffs-action-list"
+				 data-role="collapsible-set">
+			</div>
+			
+			<div id="getListButton">
+				
+				<p>
+					Hello there! Stressed, angry  or frustrated?
+					Choose a button see older rants or post another one.       
+				</p>
+				
+				<a href="#"
+				   id="loaded-blastoff"
+				   data-icon="plus"
+				   data-role="button"
+				   data-theme="b">
+					Load XML Data
+				</a>
+				
+					</div>
+			
+			<div >
+				<a href="additem.html"
+				   id="addNew"
+				   data-icon="plus"
+				   data-role="button"
+				   data-theme="b"
+				   rel="external">
+					Add New action
+				</a>
+				
+			</div>
+  		</div>
+		
+		<div data-role="footer"
+			 data-position="fixed"
+			 data-theme="c">
+			
+			<div data-role="navbar"
+				 id="navbar">
+				
+				<ul>
+					<li>
+						<a href="#"
+						   data-icon="delete"
+						   rel="external"
+						   id="clear"
+						   onclick="clear();">
+							Clear All
+						</a>
+					</li>
+					
+					<li><a href="https://github.com/ChuckSchotborgh/asd/tree/gh-pages"
+						   data-icon="star"
+						   rel="external">
+							My GitHUB</a>
+					</li>
+				</ul>
+				
+			</div><!-- /navbar -->
+			
+			<h4>&copy;2012 Studio*357*&reg;</h4>
+			
+		</div>
+		
+	</div><!-- END BLAST OFF PAGE -->
+	
+
+	<div data-role="page"
+		 id="devcons"
+		 data-add-back-btn="true"
+		 data-theme="b"
+		 data-cache="never">
+		
+		<div data-role="header"
+			 data-position="fixed"
+			 data-theme="b">
+			
+			<a href="view.html"
+			   data-rel="back"
+			   data-direction="reverse"
+			   data-icon="arrow-l">
+				Back
+			</a>
+			
+			<h1 id="headerTitle">devcons</h1>
+			
+			<a href="index.html"
+			   rel="external"
+			   data-iconpos="notext"
+			   data-icon="home">
+				Home
+			</a>
+			
+		</div>
+		
+		<div id="content"
+			 data-role="content"
+			 data-theme="b">
+			
+			<div id="devcons-action-list"
+				 data-role="collapsible-set">
+				
+			</div>
+			
+			<div id="getListButton">
+				<p>
+					Hello there! Stressed, angry  or frustrated?
+					Choose a button see older rants or post another one.       
+				</p>
+				
+				<a href="#"
+				   id="loaded-devcon"
+				   data-icon="plus"
+				   data-role="button"
+				   data-theme="b">
+					Load XML Data
+				</a>
+				
+			</div>
+			
+			<div >
+				<a href="additem.html"
+				   id="addNew"
+				   data-icon="plus"
+				   data-role="button"
+				   data-theme="b"
+				   rel="external">
+					Add New action
+				</a>
+				
+			</div>
+  		</div>
+		<div data-role="footer"
+			 data-position="fixed"
+			 data-theme="c">
+			
+			<div data-role="navbar"
+				 id="navbar">
+				
+				<ul>
+					<li>
+						<a href="#"
+						   data-icon="delete"
+						   rel="external"
+						   id="clear"
+						   onclick="clear();">
+							Clear All
+						</a>
+					</li>
+					
+					<li><a href="https://github.com/ChuckSchotborgh/asd/tree/gh-pages"
+						   data-icon="star"
+						   rel="external">
+							My GitHUB</a>
+					</li>
+				</ul>
+				
+			</div><!-- /navbar -->
+			
+			<h4>&copy;2012 Studio*357*&reg;</h4>
+			
+		</div>
+	</div><!-- END DEVCON 5 PAGE -->
+
+	<div data-role="page"
+		 id="bombs-away"
+		 data-add-back-btn="true"
+		 data-theme="b"
+		 data-cache="never">
+		
+		<div data-role="header"
+			 data-position="fixed"
+			 data-theme="b">
+			
+			<a href="view.html"
+			   data-rel="back"
+			   data-direction="reverse"
+			   data-icon="arrow-l">Back
+			</a>
+			
+			<h1 id="headerTitle">bombs-away</h1>
+			
+			<a href="index.html"
+			   rel="external"
+			   data-iconpos="notext"
+			   data-icon="home">
+				Home
+			</a>
+			
+		</div>
+		
+		<div id="content"
+			 data-role="content"
+			 data-theme="b">
+			
+			<div id="bombs-away-action-list"
+				 data-role="collapsible-set">
+			</div>
+			
+			<div id="getListButton">
+				
+				<p>
+					Hello there! Stressed, angry  or frustrated?
+					Choose a button see older rants or post another one.       
+				</p>
+				
+				<a href="#"
+				   id="load-bombs"
+				   data-icon="plus"
+				   data-role="button"
+				   data-theme="b">
+					Load CSV Data
+				</a>
+				
+			</div>
+			
+			<div >
+				<a href="additem.html"
+				   id="addNew"
+				   data-icon="plus"
+				   data-role="button"
+				   data-theme="b"
+				   rel="external">
+					Add New action
+				</a>
+				
+			</div>
+  		</div>
+		<div data-role="footer"
+			 data-position="fixed"
+			 data-theme="c">
+			
+			<div data-role="navbar"
+				 id="navbar">
+				
+				<ul>
+					<li>
+						<a href="#"
+						   data-icon="delete"
+						   rel="external"
+						   id="clear"
+						   onclick="clear();">
+							Clear All
+						</a>
+					</li>
+					
+					<li><a href="https://github.com/ChuckSchotborgh/asd/tree/gh-pages"
+						   data-icon="star"
+						   rel="external">
+							My GitHUB</a>
+					</li>
+				</ul>
+				
+			</div><!-- /navbar -->
+			
+			<h4>&copy;2012 Studio*357*&reg;</h4>
+			
+		</div>
+		
+	</div><!-- END BOMBS AWAY PAGE -->
+
+	<div data-role="page"
+		 id="missiles"
+		 data-add-back-btn="true"
+		 data-theme="b"
+		 data-cache="never" >
+		
+		<div data-role="header"
+			 data-position="fixed"
+			 data-theme="b">
+			
+			<a href="view.html"
+			   data-rel="back"
+			   data-direction="reverse"
+			   data-icon="arrow-l">
+				Back
+			</a>
+			
+			<h1 id="headerTitle">Missles Away</h1>
+			
+			<a href="index.html"
+			   rel="external"
+			   data-iconpos="notext"
+			   data-icon="home">
+				Home
+			</a>
+			
+		</div>
+		<div id="content"
+			 data-role="content"
+			 data-theme="b">
+			
+			<div id="Missiles-action-list"
+				 data-role="collapsible-set">
+			</div>
+			
+			<div id="getListButton">
+				
+				<p>
+					Hello there! Stressed, angry  or frustrated?
+					Choose a button see older rants or post another one.       
+				</p>
+				
+				<a href="#"
+				   id="load-Missiles"
+				   data-icon="plus"
+				   data-role="button"
+				   data-theme="b">
+					Load CSV Data
+				</a>
+				
+			</div>
+			
+			<div >
+				<a href="additem.html"
+				   id="addNew"
+				   data-icon="plus"
+				   data-role="button"
+				   data-theme="b"
+				   rel="external">
+					Add New action
+				</a>
+				
+			</div>
+  		</div>
+		<div data-role="footer"
+			 data-position="fixed"
+			 data-theme="c">
+			
+			<div data-role="navbar"
+				 id="navbar">
+				
+				<ul>
+					<li>
+						<a href="#"
+						   data-icon="delete"
+						   rel="external"
+						   id="clear"
+						   onclick="clear();">
+							Clear All
+						</a>
+					</li>
+					
+					<li><a href="https://github.com/ChuckSchotborgh/ASD-DangerZone/tree/gh-pages/Week1"
+						   data-icon="star"
+						   rel="external">
+							My GitHUB</a>
+					</li>
+				</ul>
+				
+			</div><!-- /navbar -->
+			<h4>&copy;2012 357-Studios&reg;</h4>
+		</div>
+	</div><!-- END MISSLES AWAY PAGE -->
+
+	<div data-role="page"
+		 id="viewaction"
+		 data-add-back-btn="true"
+		 data-theme="b"
+		 data-cache="never">
+		
+		<div data-role="header"
+			 data-position="fixed"
+			 data-theme="b">
+			
+			<a href="view.html"
+			   data-rel="back"
+			   data-direction="reverse"
+			   data-icon="arrow-l">
+				Back
+			</a>
+			
+			<h1 id="headerTitle">View action</h1>
+			
+			<a href="index.html"
+			   rel="external"
+			   data-iconpos="notext"
+			   data-icon="home">
+				Home
+			</a>
+		</div>
+		
+		<div data-role="footer"
+			 data-position="fixed"
+			 data-theme="c">
+			
+			<div data-role="navbar"
+				 id="navbar">
+				
+				<ul class="ui-grid-a">
+					<li>
+						<a href="#"
+						   title="Delete action"
+						   data-icon="delete"
+						   id="delete">Delete
+						</a>
+					</li>
+					
+					<li>
+						<a href="additem.html"
+						   id="addNew"
+						   data-icon="plus"
+						   rel="external">
+							Add New
+						</a>
+					</li>
+				</ul>
+				
+			</div><!-- /navbar -->
+			
+			<h4>&copy;2012 357-Studios&reg;</h4>
+			
+		</div>
+		
+	</div><!-- END BLAST OFF PAGE -->
+	
+	<div id="details"
+		 data-role="page"
+		 data-add-back-btn="true"
+		 data-theme="c">
+		
+	  <div data-role="header"
+		   data-theme="b">
+		
+		<h1 id="headerTitle">burns</h1>
+		
+	  </div>
+	  
+	  <div data-role="content"
+		   id="details-content">
+	  </div>
+	  
+		<div data-role="footer"
+			 data-position="fixed"
+			 data-theme="c">
+			
+			<h4>&copy;2012 357-Studios&reg;</h4>
+			
+		</div>
+		
+	</div>
+	
+	<!-- JavaScript under here -->
+	<script
+			src="http://code.jquery.com/jquery-1.8.2.min.js">
+	</script>
+	
+	<script
+			src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js">
+	</script>
+	
+	<script
+			type="text/javascript"
+			src="js/main.js">
+	</script>
+	
+</body>
+</html>

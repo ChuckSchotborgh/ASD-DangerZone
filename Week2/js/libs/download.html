@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>  <html dir="ltr" lang="en-US" class="no-js ie ie6 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 7]>     <html dir="ltr" lang="en-US" class="no-js ie ie7 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 8]>     <html dir="ltr" lang="en-US" class="no-js ie ie8 lte9 lte8"> <![endif]-->
+<!--[if IE 9]>     <html dir="ltr" lang="en-US" class="no-js ie ie9 lte9"> <![endif]-->
+<!--[if gt IE 9]>  <html dir="ltr" lang="en-US" class="no-js">  <![endif]-->
+<!--[if !IE]><!--> <html>             <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<title>Announcing jQuery Mobile 1.2.0 Final | jQuery Mobile</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://jquerymobile.com/wp-content/themes/jquery-mobile/style.css" />
+<link rel="pingback" href="http://jquerymobile.com/xmlrpc.php" />
+
+<script src="http://jquerymobile.com/wp-content/themes/jquery-mobile/js/lib/modernizr-1.5.min.js"> </script>
+<link rel="alternate" type="application/rss+xml" title="jQuery Mobile &raquo; Feed" href="http://jquerymobile.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="jQuery Mobile &raquo; Comments Feed" href="http://jquerymobile.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="jQuery Mobile &raquo; Announcing jQuery Mobile 1.2.0 Final Comments Feed" href="http://jquerymobile.com/blog/2012/10/02/announcing-jquery-mobile-1-2-0-final/feed/" />
+<script type='text/javascript' src='http://jquerymobile.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://jquerymobile.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://jquerymobile.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://jquerymobile.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='jQuery Mobile' href='http://jquerymobile.com/' />
+<link rel='start' title='Announcing the jQuery Mobile Project' href='http://jquerymobile.com/blog/2010/08/11/announcing-the-jquery-mobile-project/' />
+<link rel='prev' title='jQuery Mobile 1.2.0 Release Candidate 2' href='http://jquerymobile.com/blog/2012/09/21/jquery-mobile-1-2-0-release-candidate-2/' />
+<meta name="generator" content="WordPress 3.2.1" />
+<link rel='canonical' href='http://jquerymobile.com/blog/2012/10/02/announcing-jquery-mobile-1-2-0-final/' />
+<link rel='shortlink' href='http://jquerymobile.com/?p=3109' />
+</head>
+
+<body class="single single-post postid-3109 single-format-standard sub">
+  
+  <header id="header">
+    
+        <div id="logo">
+      <a href="http://jquerymobile.com/" rel="home" title="jQuery Mobile">jQuery Mobile</a>
+    </div>
+    
+<style>
+#logo a { background: url(http://jquerymobile.com/wp-content/uploads/2012/09/jquery-mobile-logo-03.png) no-repeat !important;}
+</style>
+
+
+     <nav id="project-nav"> 
+       <ul> 
+         <li class="alpha"><a href="http://jquery.com">jQuery</a></li> 
+         <li><a href="http://jqueryui.com">UI</a></li> 
+         <li class="active"><a href="http://jquerymobile.com">Mobile</a></li> 
+         <li class="break"><a href="http://plugins.jquery.com">Plugins</a></li>
+         <li><a href="http://meetups.jquery.com">Meetups</a></li> 
+         <li><a href="http://forum.jquery.com">Forum</a></li> 
+         <li><a href="http://events.jquery.com">Events</a></li> 
+         <li class="break"><a href="http://jquery.org/about">About</a></li> 
+         <li class="omega"><a href="http://jquery.org/donate">Donate</a></li> 
+       </ul> 
+     </nav>
+
+     <nav id="site-nav">
+       <ul>
+         <li id="nav-docs" class="alpha"><a href="http://jquerymobile.com/demos/1.2.0/">Docs</a></li>
+         <li id="nav-download"><a href="/download">Download</a></li>
+         <li id="nav-platforms"><a href="/gbs">Platforms</a></li>
+	 <li id="nav-themes"><a href="/themeroller/">Themes</a></li>
+         <li id="nav-contribute"><a href="/resources">Resources</a></li>
+         <li id="nav-community"><a href="http://forum.jquery.com/jquery-mobile">Forum</a></li>
+         <li id="nav-blog" class="omega"><a href="/blog">Blog</a></li>
+       </ul>
+<!--<li id="nav-strategy" class="alpha"><a href="/strategy">Strategy</a></li>-->
+<!--<li id="nav-planning"><a href="/designs">Designs</a></li>-->
+     </nav>
+   </header>
+
+   <section id="page">  
+  <header class="page-header">
+    <h1>Announcing jQuery Mobile 1.2.0 Final</h1>
+    <div class="entry-meta">
+      <span class="meta-prep meta-prep-author">Posted on</span> <a href="http://jquerymobile.com/blog/2012/10/02/announcing-jquery-mobile-1-2-0-final/" title="2:25 pm" rel="bookmark"><span class="entry-date">October 2, 2012</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://jquerymobile.com/blog/author/todd/" title="View all posts by Todd Parker">Todd Parker</a></span>    </div><!-- .entry-meta -->
+  </header>
+  <article id="post-3109" class="post-3109 post type-post status-publish format-standard hentry category-announcements">
+    
+
+    <p><a href="http://jquerymobile.com/wp-content/uploads/2012/09/12-version.png"><img src="http://jquerymobile.com/wp-content/uploads/2012/09/12-version.png" alt="" title="1.2.0-version" style="width:35%; margin-left:25px; float:right;" /></a></p>
+<p style="font-size: 17px;"><strong>The jQuery Mobile team is excited to announce the final release of 1.2.0</strong>. This release brings a new popup widget, an autodivider and collapsible option for listviews, and over 100 enhancements and fixes throughout the library to make things smoother, faster, and more polished. <a href="http://jquerymobile.com/demos/1.2.0/">Try it now!</a></p>
+<p style="font-size: 17px;">We&#8217;d like to thank the community, sponsors and most of all our amazing <a href="https://github.com/jquery/jquery-mobile/commit/29c529309d8071306bf64dca6606a78be23bb155">list of almost 200 contributors</a> who have supported and guided the project. We encourage you to participate wherever you can, you input and help are always appreciated.</p>
+<h3 style="font-size: 14px !important; color: #ddd; padding-bottom: 20px; border-bottom: 1px solid #ccc; line-height: 170%;"><a href="http://jquerymobile.com/demos/1.2.0/">Demos &amp; docs</a> | <a href="#features">Key changes</a> | <a href="#changelog">Change log</a> | <a href="#download">Download &amp; CDN</a> | <a href="#platforms">Supported Platforms</a></h3>
+<div id="features" style="margin: 15px 0;">
+<h3>KEY CHANGES</h3>
+<p><a href="http://jquerymobile.com/demos/1.2.0/docs/pages/popup/"><img style="float: right; margin-left: 30px; margin-top: 15px;" title="jquery-mobile-popups-1" src="http://jquerymobile.com/wp-content/uploads/2012/07/jquery-mobile-popups-1.png" alt="" width="370" /></a></p>
+<h2>New Widget: Popups</h2>
+<p>The biggest feature of 1.2 is the new <a href="http://jquerymobile.com/demos/1.2.0/docs/pages/popup/index.html">popup widget</a>. The idea with popups is to create a flexible element that makes it easy to place any content or widget in an overlay that floats above the current page. This makes it easy to build a simple tooltip, menu, popup form, map overlay, or lightbox with this same widget.</p>
+<p>Popups follow the markup pattern of dialogs and consist of a container with a data-role of popup and a link with a data-rel of popup that points to the ID of that container. When the link is clicked, the popup is shown. Clicking outside the popup, hitting the back button, or pressing the Escape key all close the popup.</p>
+<p>Here is the basic markup you need: a link and popup container.</p>
+<pre style="font-size: 14px; padding: 10px 0;">&lt;a href="#popupBasic" <strong>data-rel="popup"</strong>&gt;Open Popup&lt;/a&gt;
+
+&lt;div <strong>data-role="popup"</strong> id="popupBasic"&gt;
+	&lt;p&gt;This is a completely basic popup.&lt;p&gt;
+&lt;/div&gt;</pre>
+<p>We&#8217;ve worked hard to make the popups as flexible as possible to let you get creative. By default, popups are styled as a simple box with the same theme as the current page, rounded corners, and a drop shadow. Popups don&#8217;t have padding which makes it really easy to drop in a widget like a listview to create a menu.</p>
+<p><a href="http://jquerymobile.com/demos/1.2.0/docs/pages/popup/popup-images.html"><img style="max-width: 100%;" title="jqm-popups-wide" src="http://jquerymobile.com/wp-content/uploads/2012/07/jquery-mobile-popups-2.png" alt="" /></a></p>
+<p>Out of the box, there are options to control whether how it&#8217;s positioned (centered over the thing you tapped, the window, or any selector), add a semi-transparent overlay layer behind the popup, use an animated transition when the popup opens, adjust theming, and more. We&#8217;ve also added a few advanced demos showing how to build a lightbox by working with <a href="http://jquerymobile.com/demos/1.2.0/docs/pages/popup/popup-images.html">image scaling</a>, use <a href="http://jquerymobile.com/demos/1.2.0/docs/pages/popup/popup-iframes.html">embedded iframes</a> in popups for maps and videos, and even make a very custom looking <a href="http://jquerymobile.com/demos/1.2.0/docs/pages/popup/popup-panels.html">side panel</a>by tweaking styles and working with the API.</p>
+<p>Check out the <a href="http://jquerymobile.com/demos/1.2.0/docs/pages/popup/index.html">popup docs</a> for more on the <a href="http://jquerymobile.com/demos/1.2.0/docs/pages/popup/options.html">options</a>, <a href="http://jquerymobile.com/demos/1.2.0/docs/pages/popup/methods.html">methods</a>, and <a href="http://jquerymobile.com/demos/1.2.0/docs/pages/popup/events.html">events</a> APIs.</p>
+<h2>Popup history tracking: Optional</h2>
+<p>We heard feedback at alpha that some developers didn&#8217;t want to track popups in the history stack. Using the browser Back button to dismiss popups and menus is an important UI convention on many mobile platforms but there may be use cases like an iOS app where this is less of a concern.</p>
+<p>Since we had to exclude WP7 from the history support to workaround a bug anyway, we decided to surface this mechanism in the <a href="http://jquerymobile.com/demos/1.2.0/docs/pages/popup/options.html">popup API</a> as the <code>history</code> option, a boolean that defaults to <code>true</code> but can be set via the <code>data-history="false"</code> attribute or when calling popup:</p>
+<p><code>$( ".selector" ).popup({ history: false });</code></p>
+<h2>Popups must live within the page wrapper (for now)</h2>
+<p>After alpha went out, we also heard pretty clear feedback that folks want to re-use popups across pages by placing them outside the page container. At the moment this won&#8217;t work because many widgets (listviews, toolbars) are built with the assumption that they live inside a page container for theme inheritance and enhancement to work. Until these widgets are re-factored to work outside of pages at a future release, popups should only be added within a page.</p>
+<h2>Collapsible Lists</h2>
+<p><a href="http://jquerymobile.com/demos/1.2.0/docs/lists/lists-collapsible.html"><img style="float: right; margin-left: 30px; margin-bottom: 25px;" src="http://jquerymobile.com/wp-content/uploads/2012/07/jquery-mobile-collapsible-lists.png" alt="Collapsible lists" width="320" /></a></p>
+<p>We&#8217;ve had lots of requests to make collapsible listviews that would reveal a nested listview when a row is tapped. Rather than create a new extension for listviews, we realized we could adapt of existing collapsible widget to do the trick (thanks to sjdecaires for the suggestion).</p>
+<p>Now collapsibles have a <code>data-inset</code> option which still defaults to <code>true</code> to keep the current collapsible appearance. When this is set to false, the collapsible goes to the edges of the screen, just like a non-inset listview does. By then placing a listview inside these full width collapsible, we achieve the effect of a <a href="http://jquerymobile.com/demos/1.2.0/docs/lists/lists-collapsible.html">collapsible list</a>.</p>
+<p>To make what looks like a collapsible list that allows multiple sections to be open at once, stack up a series of <a href="http://jquerymobile.com/demos/1.2.0/docs/content/content-collapsible.html">individual collapsibles</a> with a listviews inside. To force only one section to be expanded at once, use the <a href="http://jquerymobile.com/demos/1.2.0/docs/content/content-collapsible-set.html">collapsible set (accordion)</a> to get this behavior.</p>
+<p>We&#8217;re really excited to bring this new capability to the library by just adding a single option to the existing plugin set and hope to find similar opportunities to add powerful features with minimal code.</p>
+<h2>Custom collapsible icons</h2>
+<p>We forgot to mention in the alpha post that we added the ability to configure the icons for the expanded and collapsed states of a <a href="http://jquerymobile.com/demos/1.2.0/docs/content/content-collapsible.html">collapsibles</a> and <a href="http://jquerymobile.com/demos/1.2.0/docs/content/content-collapsible-set.html">collapsible sets</a>. Collapsible headings’ default icons can be overridden by using the <code>data-collapsed-icon</code> and <code>data-expanded-icon</code> attributes and choosing any of the standard icons for each.</p>
+<h2>Listview Autodividers</h2>
+<p><a href="http://jquerymobile.com/demos/1.2.0/docs/lists/lists-autodividers.html"><img style="float: right; margin-left: 30px; margin-bottom: 25px;" src="http://jquerymobile.com/wp-content/uploads/2012/07/jquery-mobile-listview-autodividers.png" alt="Listview autodividers" width="320" /></a></p>
+<p>Speaking of listivews, we have a cool new feature in 1.2: <a href="http://jquerymobile.com/demos/1.2.0/docs/lists/lists-autodividers.html">autodividers</a>. Simply add the <code>data-autodividers</code> attribute to any listview and the framework will automatically add alphabetical list dividers based on the contents of your list.</p>
+<p><code>&lt;ul data-role="listview" <strong>data-autodividers="true"</strong>&gt;<br />
+</code></p>
+<p>This is especially helpful when generating lists dynamically. Best of all, this feature is designed to work seamlessly with our <a href="http://jquerymobile.com/demos/1.2.0/docs/lists/lists-search.html">listview filter</a> extension so dividers will be added and removed to stay in sync with the current set of filtered items.</p>
+<h2>Read-only Lists: Flat Visual Style</h2>
+<p><a href="http://jquerymobile.com/demos/1.2.0/docs/lists/lists-readonly-inset.html"><img style="float: right; margin-left: 30px; margin-bottom: 20px;" src="http://jquerymobile.com/wp-content/uploads/2012/07/jquery-mobile-readonly-listview.png" alt="Read-only Listview" width="380" /></a></p>
+<p>We&#8217;ve tweaked the design of <a href="http://jquerymobile.com/demos/1.2.0/docs/lists/lists-readonly-inset.html">read-only listviews</a> in 1.2 to make them look less clickable by removing the gradient from the list items and only using the flat background color. It&#8217;s a subtle change, but it does help to provide a clearer visual separation between clickable and read-only lists.</p>
+<p>Prior to 1.2, read only lists were also given a bit less padding because we figured that these didn&#8217;t need to be as touch-friendly as normal, clickable listviews. However, we found that some folks were using listviews with a mixture of linked and non-linked list items and that shift in padding didn&#8217;t look right.</p>
+<p>We now use the same padding for both <a href="http://jquerymobile.com/demos/1.2.0/docs/lists/lists-readonly-inset.html">read-only</a> and <a href="http://jquerymobile.com/demos/1.2.0/docs/lists/lists-inset.html">linked</a> list items.</p>
+<h2>Controlgroup Icon Buttons: Easier to Tap</h2>
+<p><a href="http://jquerymobile.com/demos/1.2.0/docs/buttons/buttons-icons.html"><img style="float: right; margin-left: 30px; margin-bottom: 25px;" src="http://jquerymobile.com/wp-content/uploads/2012/07/jquery-mobile-icon-only-buttons.png" alt="Controlgroup Icon Buttons" width="420" /></a></p>
+<p>When <a href="http://jquerymobile.com/demos/1.2.0/docs/buttons/buttons-grouped.html">icon-only buttons were used in controlgroups</a>, they were simply too small to be finger-friendly so in 1.2, we&#8217;ve improved the design to increase the padding around the icons to make them easier to tap.</p>
+<p>If you still need to smaller style, you can add the <code>data-mini="true"</code> option to the controlgroup or individual buttons to reduce the size of the button groups to be closer to the way they were in 1.1, but they are still large enough to still be usable.</p>
+<h2>Buttons in Toolbars: Now Mini by Default</h2>
+<p>Prior to 1.2, link-based buttons were mini by default, but not buttons based on <code>input</code> and <code>button</code> elements. Now, we automatically make these mini sized for visual consistency. If you ever need to revert to larger buttons, that option is available via the <code>data-mini</code> attribute.</p>
+<h2>All Form Elements: Width Adjustments in Fieldcontainers</h2>
+<p><a href="http://jquerymobile.com/demos/1.2.0/docs/lists/lists-forms.html"><img style="float: right; margin-left: 30px; margin-bottom: 25px;" src="http://jquerymobile.com/wp-content/uploads/2012/07/jquery-mobile-form-widths.png" alt="Form widths" width="400" /></a></p>
+<p>We recommend that most folks use the <a href="http://jquerymobile.com/demos/1.2.0/docs/forms/docs-forms.html">fieldcontainer</a> markup pattern when building forms to take advantage of the responsive label styling. This stacks the label above the input at narrow widths and floats it to the left of the input at wider widths to take full use of tablet and desktop devices.</p>
+<p>In 1.2, we&#8217;ve made some refinements to the design for this pattern to make sure we&#8217;re using as much of the horizontal space as possible for the form element. Labels have always been 20% + 2% margin and now the form element widths have been increased from 60% to 78% so they go as full width as possible.</p>
+<p>We&#8217;ve carefully tested every form element in a wide variety of situations to ensure that the spacing and sizing of each is as consistent as we can for a polished experience.</p>
+<h2>Touch and vmouse events: Now available for standalone use</h2>
+<p>We&#8217;ve decoupled all of our plugins and have a clear dependency map which allows us to offer the <a href="http://jquerymobile.com/download-builder/">download builder tool</a> (Alpha) to let you build the leanest package possible. However, we heard that some developers just wanted to grab the virtual mouse events that normalize between touch and mouse inputs (<code>vmouse</code>) or the touch events like <code>swipe</code> or <code>touchstart</code> but don&#8217;t want to use the rest of the jQuery Mobile library.</p>
+<p>In this latest release, we&#8217;ve refactored a bit to eliminate the dependency on mobile core for utilities like these. Now if you want to take advantage of just our vmouse events, simply check that box in the download builder and grab the file. Other utilities like <code>orientationchange</code> and <code>throttledresize</code> are also available without the core dependency in the builder.</p>
+<p>This additional decoupling is only available if you choose <strong>1.2.0 </strong>or<strong> latest</strong> in the version dropdown of the <a href="http://jquerymobile.com/download-builder/">download builder tool</a>.</p>
+<p>Note that the file generated by the download builder is always <code>jquery.mobile.custom.zip</code> which contains the <code>.js</code>, <code>.min.js</code>, <code>.css</code>, <code>.min.css</code>.</p>
+<h2>Support for jQuery core 1.8 added: Impact on BB5 and iOS3</h2>
+<p>jQuery Mobile 1.2 now supports up to version jQuery core 1.8.2. However, there was an important change in jQuery core 1.8.x that <a href="https://github.com/jquery/jquery/pull/726">removed a lot of old code</a> for <code>offset()</code> in favor of the more modern <code>getBoundingClientRect()</code> and <code>window.webkitConvertPointFromNodeToPage()</code> methods. The one downside of this change is that Blackberry 5 and iOS 3 don&#8217;t support either of these methods, which broke widgets like the loader, popup and slider.</p>
+<p>As of now, we&#8217;ve added in a small bit of code to detect if jQuery core 1.8+ is in use and if <code>getBoundingClientRect()</code> isn&#8217;t supported, we don&#8217;t enhance the page and keep it as simple HTML. That means that <strong>if you use 1.8.x with jQuery Mobile, BB5 and iOS3 will receive the C Grade experience</strong> (basic HTML). If you use version 1.7.x, these will be enhanced as before.</p>
+<h2>jQuery core 1.6.x: Support dropped</h2>
+<p>As a project, we generally support the two latest major versions of jQuery core. Now that 1.8 has been out for a while, we&#8217;re dropping support for 1.6.x in this release. If you use version 1.6.x, things should work fine now, but going forward, we will won&#8217;t actively test 1.6.x or fix issues that <em>only</em> occur with this version.</p>
+<h2>Supported Platforms: Always Expanding</h2>
+<p><a href="http://jquerymobile.com/gbs"><img style="float: right; margin-left: 30px; margin-top: -20px; margin-bottom: 25px;" src="http://jquerymobile.com/wp-content/uploads/2012/07/logo_jqm-platforms.png" alt="Form widths" width="260" /></a></p>
+<p>Our test lab has grown to over 70 phone, e-readers and tablets over the past few years. Luckily, our dedication to web standards and feature detection has meant that most new devices &#8220;just work&#8221; when they arrive. As of 1.2, we&#8217;ve added a few notable A grade platforms into testing rotation: iOS 6, Android 4.1 (Jellybean), Tizen, Firefox for Android, and Kindle Fire HD.</p>
+<h2 id="changelog">Change Log for 1.2</h2>
+<style>
+#page h3.widget-header {
+display: block;
+font-size: 16px !important;
+font-weight: bold;
+border-bottom: 1px solid #78C729;
+padding: 25px 0 5px 0;
+color:#333;
+}
+.jqm-version-banner { display:none }
+</style>
+<h3 class="widget-header">Button</h3>
+<p><a title="goto commit #6b95f46e12" href="https://github.com/jquery/jquery-mobile/commit/6b95f46e126d39b4788ea95e55c9f90bdc608e42">Added padding for icon-only buttons in controlgroup</a> <span class="issue">(Issue: <a title="size of buttons in controlgroup with iconpos=&quot;notext&quot;" href="https://github.com/jquery/jquery-mobile/issues/1998">#1998</a>)</span></p>
+<p><a title="goto commit #bd5b4a7f09" href="https://github.com/jquery/jquery-mobile/commit/bd5b4a7f09fd9f0a7b290eef668b2e7df2e7da62">Adjusted CSS selector for fullsize button in toolbar</a> <span class="issue">(Issue: <a title="Search input clear button gets unwanted padding when in header/footer." href="https://github.com/jquery/jquery-mobile/issues/4619">#4619</a>)</span> &#8212; The search input clear button now gets the correct padding when placed in a header or footer.</p>
+<p><a title="goto commit #a618f806bf" href="https://github.com/uGoMobi/jquery-mobile/commit/a618f806bf688064671223a52fd2c1ce04e0a824">Make button elements default to mini in header and footer</a> <span class="issue">(Issue: <a title="<button> and <a> different font size in footer&#8221; href=&#8221;https://github.com/jquery/jquery-mobile/issues/3998&#8243;>#3998</a>)</span> &#8212; All buttons, regardless of markup, are now mini by default in toolbars. This was an implicit behavior in 1.0, but now we automatically make buttons the mini size unless explicitly set to full size when in toolbars to make this work as expected.</p>
+<p><a title="goto commit #82cf4d98be" href="https://github.com/jquery/jquery-mobile/commit/82cf4d98be389f50564ed56d9c3de20af54a090c">Override default margin if controlgroups or form elements have class ui-btn-left/right</a> <span class="issue">(Issue: <a title="Controlgroup: Horizontal controlgroup shouldn't have margins in header" href="https://github.com/jquery/jquery-mobile/issues/4713">#4713</a>)</span></p>
+<h3 class="widget-header">CSS</h3>
+<p><a title="goto commit #829208f1ff" href="https://github.com/jquery/jquery-mobile/commit/829208f1ff17b78b499680a69090fad3a5e3e48e">Adjusting comment to be simple apostrophe rather than special character</a>  &#8212; Remove an unusual character in CSS comment that was causing compilation problems. Thanks <a title="Thanks ecaron!" href="https://github.com/ecaron">@ecaron</a>!</p>
+<p><a title="goto commit #9efddc842e" href="https://github.com/jquery/jquery-mobile/commit/9efddc842ee87aebc8fca90ab4d7c2a900d25a37">Outline style &#8220;auto&#8221; for browsers that don&#8217;t support box-shadow so it is the same as outline on regular links</a></p>
+<p><a title="goto commit #2732b473a1" href="https://github.com/jquery/jquery-mobile/commit/2732b473a11df6920afbd2f229487c62b12e21c4">Remove a typo in jquery.mobile.theme CSS</a> <span class="issue">(Issue: <a title="Typo in jquery.mobile.theme.css" href="https://github.com/jquery/jquery-mobile/issues/4910">#4910</a>)</span> &#8212; Corrected a typo in button hover CSS. <a title="Thanks Mitch64!" href="https://github.com/Mitch64">Mitch64</a>!</p>
+<p><a title="goto commit #8c3c969a98" href="https://github.com/jquery/jquery-mobile/commit/8c3c969a982dbf1577184546f0393c800978088c">Set webkit-text-size-adjust to 100% instead of &#8220;none&#8221;</a> <span class="issue">(Issue: <a title="Cannot zoom text on desktop Safari nor Google Chrome" href="https://github.com/jquery/jquery-mobile/issues/4218">#4218</a>)</span> &#8212; Fixes a desktop webkit browser bug that prevents text zoom.</p>
+<h3 class="widget-header">CheckboxRadio</h3>
+<p><a title="goto commit #aca3959cc1" href="https://github.com/jquery/jquery-mobile/commit/aca3959cc18e1f85db5d6c85877ee39a61ed7e60">Filter for first label. Fixes label conflict issue</a> <span class="issue">(Issue: <a title="label conflict issue" href="https://github.com/jquery/jquery-mobile/issues/3879">#3879</a>)</span> &#8212; Fixes the double label issue which was raised if checkboxes or radios had associated more than one label.</p>
+<h3 class="widget-header">Checkboxradio</h3>
+<p><a title="goto commit #bbda53f45c" href="https://github.com/jquery/jquery-mobile/commit/bbda53f45ce873d073aab725a537c52c9c6147fe">Remove explicit left and right margin 0 to allow margins when used in grid</a>  &#8212; CSS improvement for checkboxes and radios to look more graceful when placed in grids.</p>
+<h3 class="widget-header">Collapsible</h3>
+<p><a title="goto commit #8550faec0d" href="https://github.com/jquery/jquery-mobile/commit/8550faec0d3ac2775bc0aa2923e69bbcbacb81bc">Add support for same expanded/collapsed non default icon</a> <span class="issue">(Issue: <a title="Collapsible Content: Info Icon Issue." href="https://github.com/jquery/jquery-mobile/issues/4801">#4801</a>)</span> &#8212; Collapsibles now can have the same non-default icon for collapsed/expanded state.</p>
+<p><a title="goto commit #5428e2a34e" href="https://github.com/jquery/jquery-mobile/commit/5428e2a34eef656e56735e5cbd8a162b20af59a5">Added inset option for Collapsible / Collapsible sets. Adjusted CSS for inset collapsible (removed -8px margin) and added CSS for non-inset collapsibles.</a> <span class="issue">(Issue: <a title="data-inset option for Collapsible / Collapsible sets" href="https://github.com/jquery/jquery-mobile/issues/3976">#3976</a>)</span> &#8212; Collapsibles and Collapsible-Sets now have a new inset option to remove all margins and give them a non-inset listview look.</p>
+<p><a title="goto commit #d55eddafbe" href="https://github.com/jquery/jquery-mobile/commit/d55eddafbe7f23bf275fcd6b879b51f8b58df24f">Added rule that prevents double borders in a serie of individual collapsibles</a>  &#8212; To avoid double borders (top and bottom) in a serie of standalone collapsibles a CSS rule was added that can be easily overwritten if collapsibles with different swatches are used.</p>
+<p><a title="goto commit #3713010265" href="https://github.com/jquery/jquery-mobile/commit/37130102654b1b05f9e69320db60b480d2abeaba">Custom collapsible icons</a>  &#8212; Adds the ability to change the icon used for collapsible headers through data-* attributes and prototype options. Content of pages with fixed persistent toolbars higher than standard, now gets the right alignment. Thanks <a title="Thanks jakeboone02!" href="https://github.com/jakeboone02">jakeboone02</a>!</p>
+<p><a title="goto commit #0f67d3ebbb" href="https://github.com/jquery/jquery-mobile/commit/0f67d3ebbb000e901504dd0bc0e92cc096fe663d">Made non-inset listviews exactly fit inside ui-collapsible-content.</a></p>
+<p><a title="goto commit #b50ea798ef" href="https://github.com/jquery/jquery-mobile/commit/b50ea798ef9e8ac0a9775fc48c451939b12baad9">Make sure the collapsibles inherit a theme if nothing is set</a>  &#8212; Collapsibles now show the right hover/button-up/button-down styling.</p>
+<h3 class="widget-header">CollapsibleSet</h3>
+<p><a title="goto commit #1a68e9a8eb" href="https://github.com/jquery/jquery-mobile/commit/1a68e9a8ebd112eaba6495089840cc2e04ccbe24">Make sure only one collapsible in a set is expanded at the same time.</a>  &#8212; Improved collapsible set functionality.</p>
+<h3 class="widget-header">Controlgroup</h3>
+<p><a title="goto commit #aaf218aa07" href="https://github.com/jquery/jquery-mobile/commit/aaf218aa0788fa115b6335dea267d614cba7bfbe">Float none for select and checkboxradio ui-btn because their container div already has float left</a></p>
+<p><a title="goto commit #9403cf0276" href="https://github.com/jquery/jquery-mobile/commit/9403cf0276c3dab0c3f9ea781610e7f48549302d">Keep the possibility to center the controls with vertical-align property</a> <span class="issue">(Issue: <a title="Horizontal alignment bug with jQuery mobile 1.1.1" href="https://github.com/jquery/jquery-mobile/issues/4765">#4765</a>)</span></p>
+<p><a title="goto commit #96700330d7" href="https://github.com/jquery/jquery-mobile/commit/96700330d771254b0194a98d8e15008421c67cb2">Make icon-only buttons default to mini in toolbars</a>  &#8212; Toolbar buttons without text (<code>data-iconpos="notext"</code>) now get the mini style by default.</p>
+<p><a title="goto commit #3e8116afb3" href="https://github.com/jquery/jquery-mobile/commit/3e8116afb39ea8de840dd97c6f326adbe3586af6">Prevent small bottom margin that some browsers add because of display inline-block</a>  &#8212; Horizontal controlgroups now getting centered vertical alignment to prevent a small margin, that some browsers add to buttons.</p>
+<p><a title="goto commit #352d4b347b" href="https://github.com/jquery/jquery-mobile/commit/352d4b347b9cf356d560044f7c4f3fa4747c5289">Prevent the controls inside controlgroups from being wrapped multiple times</a> <span class="issue">(Issue: <a title="Calling controlgroup constructor causes fieldset width to shrink" href="https://github.com/jquery/jquery-mobile/issues/4716">#4716</a>)</span></p>
+<h3 class="widget-header">Core</h3>
+<p><a title="goto commit #e740c1575e" href="https://github.com/jquery/jquery-mobile/commit/e740c1575e87b807e0e79a30fd1c633784fe6861">Enabled box shadow support for BlackBerry OS 6+</a> <span class="issue">(Issue: <a title="JQM &quot;Text input&quot; issue on Blackberry" href="https://github.com/jquery/jquery-mobile/issues/4828">#4828</a>)</span> &#8212; Fixed a text input issue on Blackberry 6 browsers where the input became black when it got focus.</p>
+<p><a title="goto commit #fbeeb5b82c" href="https://github.com/jquery/jquery-mobile/commit/fbeeb5b82c65be3dfee39b8a9ce4df39bccf3f85">Introduce $.mobile.supportsTouch as a supported API and resuscitated $.support.touch though it is still unsupported</a></p>
+<p><a title="goto commit #34c091ee6b" href="https://github.com/jquery/jquery-mobile/commit/34c091ee6b87f43de37696d36826d145b3dd3004">Moves fixed positioning blacklist to jquery.mobile.support.js</a>  &#8212; Made the frameworks browser detection for fixed positioning support a central component.</p>
+<p><a title="goto commit #2ab215b752" href="https://github.com/jquery/jquery-mobile/commit/2ab215b7522f853b0dbd2c3a72602227e81775a4">Moving to jQuery 1.8 as the default version</a>  &#8212; jQuery 1.8 (1.8.1) ist now the default version for jQuery Mobile 1.2.x</p>
+<p><a title="goto commit #50029ac4d5" href="https://github.com/jquery/jquery-mobile/commit/50029ac4d5ce37f45ad8ed5b96ea3979cae2b6b4">Reference widget factory version</a> <span class="issue">(Issue: <a title="jQuery UI widget version unknown" href="https://github.com/jquery/jquery-mobile/issues/2838">#2838</a>)</span> &#8212; jQuery UI&#8217;s widget file includes its actual version now.</p>
+<p><a title="goto commit #6ef910d929" href="https://github.com/jquery/jquery-mobile/commit/6ef910d929edaa4c479eef61a814beb82b685c0f">When the hash portion of the initial URL is exactly equal to the dialog hash key, we must trigger a hashchange</a> <span class="issue">(Issue: <a title="Navigation breakage when inital url contains a dialog hash key (and nothing else)" href="https://github.com/jquery/jquery-mobile/issues/5021">#5021</a>)</span></p>
+<h3 class="widget-header">Download Manager</h3>
+<p><a title="goto commit #b6fa00aab8" href="https://github.com/jquery/jquery-mobile/commit/b6fa00aab87b0c9015d04957d1fcf46b42f22af0">CSS metadata were pointing at jquery.mobile.transitions.*</a>  &#8212; Fix for the jQuery Mobile download manager.</p>
+<p><a title="goto commit #66b319c0d7" href="https://github.com/jquery/jquery-mobile/commit/66b319c0d72b9b7a9d83135d5334823fdca7efeb">Fixed CSS path had an extra dotdot</a>  &#8212; Path fix for the jQuery Mobile download manager.</p>
+<h3 class="widget-header">Form</h3>
+<p><a title="goto commit #cb16e2f186" href="https://github.com/uGoMobi/jquery-mobile/commit/cb16e2f18639f531bf3347f08b3166f7f2ea7853">Full width forms</a> <span class="issue">(Issue: <a title="field of 60% width: Full width forms" href="https://github.com/jquery/jquery-mobile/issues/3301">#3301</a>)</span> &#8212; The width of fieldcontainers has been changed from 60% to 78% so the form will be full width now.</p>
+<h3 class="widget-header">Framework, general</h3>
+<p><a title="goto commit #6111dd68c9" href="https://github.com/jquery/jquery-mobile/commit/6111dd68c9734657c537acef766076e3baf08e97">Added new jQM logo to docs homepage</a>  &#8212; Learn more about the <a title="New jQuery Mobile Logo" href="http://jquerymobile.com/blog/2012/09/19/new-jquery-mobile-logo/">New jQuery Mobile Logo!</a></p>
+<h3 class="widget-header">Grid</h3>
+<p><a title="goto commit #85e2030ab5" href="https://github.com/jquery/jquery-mobile/commit/85e2030ab56959a791976f21c4fd18f16e14c9c9">Grid CSS refactoring</a> <span class="issue">(Issue: <a title="Grid with more than 2 columns and multiple rows has incorrect CSS" href="https://github.com/jquery/jquery-mobile/issues/4835">#4835</a>)</span> &#8212; Grids with more than two columns and multiple rows now get the correct CSS. Thanks <a title="Thanks diamondq!" href="https://github.com/diamondq">diamondq</a>!</p>
+<h3 class="widget-header">Listview</h3>
+<p><a title="goto commit #a77c00a16f" href="https://github.com/jquery/jquery-mobile/commit/a77c00a16fe73cdd76b61f7b106e36dc667fbf9d">Add extra listview autodivider check</a> <span class="issue">(Issue: <a title="Listview nested in regular list causes error in 1.2" href="https://github.com/jquery/jquery-mobile/issues/4901">#4901</a>)</span> &#8212; If a listview was nested inside a normal list then the listviewcreate event for autodividers would also fire for the parent list causing an error as this list did not contain listview data. An extra check was added to ensure the parent list is actually a listview. Thanks <a title="Thanks marcins!" href="https://github.com/marcins">marcins</a>!</p>
+<p><a title="goto commit #9ea70dfd99" href="https://github.com/jquery/jquery-mobile/commit/9ea70dfd99fadb8494429c76bb358305dfff2583">Added a &#8220;listviewbeforefilter&#8221; event</a> <span class="issue">(Issue: <a title="Improvement request : listview search field callback on keyup" href="https://github.com/jquery/jquery-mobile/issues/4721">#4721</a>)</span> &#8212; Listview filter function improvement.</p>
+<p><a title="goto commit #6f9e2bb8cb" href="https://github.com/jquery/jquery-mobile/commit/6f9e2bb8cb587a39ba24394bd2a090ce85b678ae">Added filter input as a data attribute of the event</a></p>
+<p><a title="goto commit #651e5468a0" href="https://github.com/jquery/jquery-mobile/commit/651e5468a04739f31f07f2f4cb7b847e63752b40">Added missing webkit prefix for border-radius on Android 2.1 and iOS 3.2.</a></p>
+<p><a title="goto commit #35775c563a" href="https://github.com/jquery/jquery-mobile/commit/35775c563a3882a33f8c4e23e25f531b13fd923f">Always filter the full list of items</a> <span class="issue">(Issue: <a title="Listview - only use 'lastval' functionality with default filter behaviour" href="https://github.com/jquery/jquery-mobile/issues/4133">#4133</a>)</span> &#8212; Custom filter methods for listviews now always filter all list items.</p>
+<p><a title="goto commit #3745f40881" href="https://github.com/jquery/jquery-mobile/commit/3745f408810f6977225c41c3bc03fec07efd6847">Improved border styling of listview inside collapsible content</a>  &#8212; Improved CSS for listviews and listview filter items inside collapsible content.</p>
+<p><a title="goto commit #229d8f07f6" href="https://github.com/jquery/jquery-mobile/commit/229d8f07f62543b3d7c5a16603f737d1b75a730f">Increase the level of specificity of the margin 0 rule for listview buttons to avoid margins when used in grid</a> <span class="issue">(Issue: <a title="ListView in Grid makes strange border" href="https://github.com/jquery/jquery-mobile/issues/4945">#4945</a>)</span> &#8212; CSS improvement for listviews to be more solid when placed in grids.</p>
+<p><a title="goto commit #76fa164e58" href="https://github.com/jquery/jquery-mobile/commit/76fa164e581d4804fb5a4175841959cb5d120f1d">Listview autodividers: Fix for text links in list items</a>  &#8212; Autodividers now work as expected if list items contain links.</p>
+<p><a title="goto commit #3f4343d7b4" href="https://github.com/jquery/jquery-mobile/commit/3f4343d7b43a76a92aa48c8739a453acb810e0b8">Merge branch &#8216;townxelliot-autodividers&#8217;</a>  &#8212; New Listview option Autodividers. Thanks <a title="Thanks townxelliot!" href="https://github.com/townxelliot">townxelliot!</a></p>
+<p><a title="goto commit #571c08e3b0" href="https://github.com/jquery/jquery-mobile/commit/571c08e3b003ac1bbf85bf34b49b104b24dc69b5">New styling for read-only lists</a> <span class="issue">(Issue: <a title="Read-only lists styling" href="https://github.com/jquery/jquery-mobile/issues/4347">#4347</a>)</span> &#8212; Adding theming support and new styling for read only lists.</p>
+<h3 class="widget-header">Navbar</h3>
+<p><a title="goto commit #446fed733d" href="https://github.com/jquery/jquery-mobile/commit/446fed733d1587d69e09e19ff0e8de44e2bdee7c">Added clearfix for navbar</a> <span class="issue">(Issues: <a title="css problems between 1.2.0.alpha.1 and 1.2.0.rc.1" href="https://github.com/jquery/jquery-mobile/issues/5008">#5008</a> <a title="jqm 1.2 rc on android 2.3.5" href="https://github.com/jquery/jquery-mobile/issues/5032">#5032</a>)</span> &#8212; CSS improvement to avoid styling issues when Navbars placed in listviews.</p>
+<p><a title="goto commit #b668b60069" href="https://github.com/jquery/jquery-mobile/commit/b668b6006967354111f62caf96db37d63052bb52">Capture and retrigger clicks on the parent list item element in navbars</a> <span class="issue">(Issue: <a title="Persistent navbar broken on scroll, Chrome for android" href="https://github.com/jquery/jquery-mobile/issues/4663">#4663</a>)</span> &#8212; Fix for an issue on chrome/android where buttons in navbars are functionless after scroll.</p>
+<p><a title="goto commit #c0a016eb67" href="https://github.com/jquery/jquery-mobile/commit/c0a016eb6768e5df802715f8f50b3c9b47749ec9">Move active state regain code out of _create() and into its own prototype-level function and use ._on() to invoke it during &#8220;pagebeforeshow&#8221;</a></p>
+<p><a title="goto commit #7f312da8d6" href="https://github.com/jquery/jquery-mobile/commit/7f312da8d62bdf6bb02a3d3b0764ba0be2d9c8e5">Persistent navbar broken on scroll, Chrome for Android.</a> <span class="issue">(Issue: <a title="Persistent navbar broken on scroll, Chrome for android" href="https://github.com/jquery/jquery-mobile/issues/4663">#4663</a>)</span> &#8212; Persistent navbars now work as expected. Thanks <a title="Thanks mmavko!" href="https://github.com/mmavko">mmavko</a>!</p>
+<p><a title="goto commit #2354079067" href="https://github.com/jquery/jquery-mobile/commit/23540790676a4cd6e53c1157903744fc8c35cf70">Set margin to 0 to avoid the top/bottom margin of .ui-mini being applied</a></p>
+<h3 class="widget-header">Navigation</h3>
+<p><a title="goto commit #bd94e54e17" href="https://github.com/jquery/jquery-mobile/commit/bd94e54e17d24d77bb488392ba750db4df52f6c6">Abstract backward movement in history</a> <span class="issue">(Issue: <a title="Close button in dialogs does not work on Android using phone gap and JQM 1.1.1 or 1.2.0" href="https://github.com/jquery/jquery-mobile/issues/4950">#4950</a>)</span> &#8212; &#8220;window.history.back&#8221; doesn&#8217;t work in phonegap applications after a page refresh, though it does work under hashchange/replacestate. The solution is to use their &#8220;navigator.app.backHistory&#8221; method along with a configuration option. The reasoning for the option is to prevent any corner cases popping up with existing phonegap applications. Forward history movement for the same usecase is _not_ addressed but remains an even lower priority.</p>
+<p><a title="goto commit #d0bb999f7f" href="https://github.com/jquery/jquery-mobile/commit/d0bb999f7f840824304c0a9bd65e2051784ef2b2">Avoid string concat where possible</a>  &#8212; Code refining.</p>
+<p><a title="goto commit #207f854733" href="https://github.com/jquery/jquery-mobile/commit/207f854733ebdd684e2f7fea44201621cd91bc08">Handle the case where the initial URL contains a non-path hash that points to a non-existing page</a></p>
+<p><a title="goto commit #cb15dc3b13" href="https://github.com/jquery/jquery-mobile/commit/cb15dc3b13622e5776e5e5914213bc3d974180ce">Handle URLs with parentheses properly</a> <span class="issue">(Issue: <a title="jqmDataRE kills SAP URLs with brackets" href="https://github.com/jquery/jquery-mobile/issues/4849">#4849</a>)</span> &#8212; The regular expression used to parse the jqmData psuedo selector restricts the<br />
+use of parentheses which are valid in urls. This breaks data-ns-url selection.<br />
+The fix is to avoid the pseudo selector.</p>
+<p><a title="goto commit #75ba273483" href="https://github.com/jquery/jquery-mobile/commit/75ba273483074d56b4b930414ea5660f4a227989">Make sure the username and password in the url are encoded</a> <span class="issue">(Issue: <a title="XSS with location.href behavior of some browsers" href="https://github.com/jquery/jquery-mobile/issues/4787">#4787</a>)</span></p>
+<p><a title="goto commit #38ae834662" href="https://github.com/jquery/jquery-mobile/commit/38ae834662e351b79d23ba065c02720ef0e84991">Overwrite stale dialog urlHistory entry instead of reusing it as-is</a> <span class="issue">(Issue: <a title="Popup: Chaining popup > dialog > popup&#8221; href=&#8221;https://github.com/jquery/jquery-mobile/issues/4806&#8243;>#4806</a>)</span> &#8212; Fix for chaining popup opens a dialog, dialog opens a popup.</p>
+<p><a title="goto commit #4348eac153" href="https://github.com/jquery/jquery-mobile/commit/4348eac153d6cc7da29797a30e6d44549e09f2eb">Replace location.href references with a centralized method so we can address a XSS/cross-site-scripting issue</a> <span class="issue">(Issue: <a title="XSS with location.href behavior of some browsers" href="https://github.com/jquery/jquery-mobile/issues/4787">#4787</a>)</span></p>
+<p><a title="goto commit #352f1964b6" href="https://github.com/jquery/jquery-mobile/commit/352f1964b685614d27a3e4ef669093778368f915">Strip authority to avoid exploits in parse regex</a> <span class="issue">(Issue: <a title="XSS with location.href behavior of some browsers" href="https://github.com/jquery/jquery-mobile/issues/4787">#4787</a>)</span> &#8212; As explained by @mala in Issue <a title="XSS with location.href behavior of some browsers" href="https://github.com/jquery/jquery-mobile/issues/4787">#4787</a>, most browsers simply strip the authority from `location.href` anyway. We can simply mimick this more secure behavior for the browsers that don&#8217;t thereby avoiding the decoding XSS.</p>
+<p><a title="goto commit #7966179faa" href="https://github.com/jquery/jquery-mobile/commit/7966179faac31c5f76c045eba3c9978ee88ef7ef">When showing a dialog, do not append dialogHashKey if the URL already contains it</a> <span class="issue">(Issue: <a title="Forward history + dialog" href="https://github.com/jquery/jquery-mobile/issues/2656">#2656</a>)</span></p>
+<h3 class="widget-header">Page</h3>
+<p><a title="goto commit #7cf44d443c" href="https://github.com/jquery/jquery-mobile/commit/7cf44d443cb9b11e321b644b6715cce5ad0157d9">Header buttons: Added &#8220;button&#8221; to the selector</a> <span class="issue">(Issue: <a title="Using button tag in header will show title in new line and increase height of header toolbar" href="https://github.com/jquery/jquery-mobile/issues/4638">#4638</a>)</span> &#8212; Manual added header buttons now placed in the same line as the title.</p>
+<h3 class="widget-header">Phonegap</h3>
+<p><a title="goto commit #56ed53b545" href="https://github.com/jquery/jquery-mobile/commit/56ed53b545d34b6db6781ee32d8b53e1e66d1215">Added a note to the docs about using underscores within foldernames in PhoneGap for Android</a> <span class="issue">(Issue: <a title="Folders starting width underscore breaks jquery mobile on Phonegap for Android" href="https://github.com/jquery/jquery-mobile/issues/4991">#4991</a>)</span></p>
+<h3 class="widget-header">Popup</h3>
+<p><a title="goto commit #0b87a42671" href="https://github.com/jquery/jquery-mobile/commit/0b87a42671110e711725553ef0ad0fce972c3223">Add afteropen trigger to setTimeout with android fix</a>  &#8212; The select menu&#8217;s (now that they depend on popups) require that the first item is focused after they are open. The focus of the popup itself was deferred until after the trigger of afteropen which the select menu uses to focus its first item. As a result the focus was stolen from the select menu by the popup to the popup container.</p>
+<p><a title="goto commit #8cdc71591b" href="https://github.com/jquery/jquery-mobile/commit/8cdc71591b42207289c1888ff0614524f0d590c3">Add hashListeningEnabled to the intersection that establishes whether we will use history or not</a></p>
+<p><a title="goto commit #e87386d538" href="https://github.com/jquery/jquery-mobile/commit/e87386d5383be65675e2abdfe9856db21879f988">Adding header/content/footer border support for popups</a> <span class="issue">(Issue: <a title="Popup: header/content/ footer don't get rounded corners" href="https://github.com/jquery/jquery-mobile/issues/5000">#5000</a>)</span> &#8212; Adds corner support for header/content/footer container inside popups having <code>data-corners</code> attribute set to <code>true</code></p>
+<p><a title="goto commit #5572b5e10e" href="https://github.com/jquery/jquery-mobile/commit/5572b5e10e992a95302d618694fe8bf8b4a67300">Bind vclick handler to the document on Android</a>  &#8212; To implement click-on-screen-to-dismiss-popup one must bind the &#8220;vclick&#8221; handler to the document rather than the screen, in order to prevent unpleasantness on Android 4.0. WP7 nevertheless requires the code to remain as is, because handling the screen vclick after it has bubbled to the document causes text and inputs underneath the screen to handle and then swallow the event.</p>
+<p><a title="goto commit #46a65c6bd2" href="https://github.com/jquery/jquery-mobile/commit/46a65c6bd28bbaac59b3c49a7097f66296d72cc0">Disable popup history managment in old IE by default</a> <span class="issue">(Issue: <a title="Wild scrolling occurs when hiding popup on WP7" href="https://github.com/jquery/jquery-mobile/issues/4784">#4784</a>)</span> &#8212; Cause of a Windows Phone 7 (WP7) scroll position caching issue, the new popup history option is disbaled by default for old IE browsers.</p>
+<p><a title="goto commit #58f837f50e" href="https://github.com/jquery/jquery-mobile/commit/58f837f50e8b72194de2a9a29ecaa2545e2b3af8">Do not allow the event to bubble up to the document, after all</a>  &#8212; Refactoring the popup close process to stop bubbling up to the document.</p>
+<p><a title="goto commit #5680ba620c" href="https://github.com/jquery/jquery-mobile/commit/5680ba620c719de7ea4c2c1ec97928f58442e8a9">Do not fiddle with the focus when rapid-opening/closing during reposition</a> <span class="issue">(Issue: <a title="JQM 1.2 Alpha: Popup with form quickly opens and closes android keyboard can't input text." href="https://github.com/jquery/jquery-mobile/issues/4797">#4797</a>)</span> &#8212; Fix for a native keyboard issue preventing data-input in forms in popups when popup-reposition occurs.</p>
+<p><a title="goto commit #a1356c10df" href="https://github.com/jquery/jquery-mobile/commit/a1356c10df988a7523ff3cb0e116b920d43ca593">Do not forget about the no-history-manipulation case when calling _open()</a>  &#8212; Popups open method improvement when no-history feature is used.</p>
+<p><a title="goto commit #4ed1fc759d" href="https://github.com/jquery/jquery-mobile/commit/4ed1fc759d2a2a024ec918711d8280ac55b0e921">Do not use history when there is no AJAX</a> <span class="issue">(Issue: <a title="Popups don't open on BlackBerry 5" href="https://github.com/jquery/jquery-mobile/issues/5006">#5006</a>)</span> &#8212; Fix for non working popups on BlackBerry 5.</p>
+<p><a title="goto commit #82e6fe7393" href="https://github.com/jquery/jquery-mobile/commit/82e6fe7393538391d34d680ad979116f6298ffd5">Eliminate the need for a popup IE6/7-specific workaround class, as well as additional scripting</a>  &#8212; Popup background fix for IE6/7.</p>
+<p><a title="goto commit #d2361b5424" href="https://github.com/jquery/jquery-mobile/commit/d2361b5424f3fdbd446182267914de55e2432abe">Enable close button when history is disabled</a>  &#8212; Make the popup close button work even if the new popup history option is disabled.</p>
+<p><a title="goto commit #e979160f89" href="https://github.com/jquery/jquery-mobile/commit/e979160f89c7513541a99df5c530c5c3075d783a">Exclude internal attributes from dom element</a> <span class="issue">(Issue: <a title="Popup markup contains data-container=&quot;[object Object]&quot;" href="https://github.com/jquery/jquery-mobile/issues/4967">#4967</a>)</span> &#8212; Fixed markup issue when popup is opened.</p>
+<p><a title="goto commit #5af122fa85" href="https://github.com/jquery/jquery-mobile/commit/5af122fa8532ee34177af7813ddaba6824ece795">First pass at disabling history with an option in popup</a>  &#8212; Added a popup option for disabling URL history management. This new option sets whether to alter the URL when a popup is open to support the browsers back button. URL history management is enabled by default.</p>
+<p><a title="goto commit #7a14e15889" href="https://github.com/jquery/jquery-mobile/commit/7a14e1588977d835c72b5a62217d413cbba315be">First pass at popup simplification</a>  &#8212; Refactoring popup code for simplification.</p>
+<p><a title="goto commit #2464e88fce" href="https://github.com/jquery/jquery-mobile/commit/2464e88fce04e532f92687fc5cb85ed6994077c1">Fixed the order of the tolerance parameters</a> <span class="issue">(Issue: <a title="Popup tolerance parameters in different order than documentation" href="https://github.com/jquery/jquery-mobile/issues/4856">#4856</a>)</span> &#8212; The values for the popup tolerance option to set the distance between the popup and the window, now were interpreted as the documention says: top, right, bottom, left.</p>
+<p><a title="goto commit #72413a0833" href="https://github.com/jquery/jquery-mobile/commit/72413a0833c499a8ce392638c7a4e81ffc827ef6">Focus parent link on close when opened by a parent link</a>  &#8212; Popup calling links now get focus back when popup closed.</p>
+<p><a title="goto commit #17eb6619a7" href="https://github.com/jquery/jquery-mobile/commit/17eb6619a7e35a3fc229c8e206e51cc35dcaa078">Hide fixed toolbars on Android ICS native browser when popups are opened</a> <span class="issue">(Issues: <a title="Popup issues on Android 4 ICS" href="https://github.com/jquery/jquery-mobile/issues/4816">#4816</a> <a title="z-index issue with popup" href="https://github.com/jquery/jquery-mobile/issues/4844">#4844</a> <a title="[AndroidOS 4.04] Pop up Dialog's overlay-theme Does not work with fixed bars" href="https://github.com/jquery/jquery-mobile/issues/4874">#4874</a>)</span> &#8212; When fixed toolbars were used on a page, the use of any position:fixed elements cause havoc with rendering of stacked elements in Android. In these situations, the popup would visually appear *under* the overlay but was still clickable so this was a display bug. This issues were addressed by adding conditional logic that will toggle the toolbars from position:fixed to position:absolute when the popup is opened and closed. The drawback to this fix is fixed toolbars appear to hide when a popup is open, but this workaround is only applied to Android 4.0 and will only been seen if there are fixed toolbars and popups with an overlay theme.</p>
+<p><a title="goto commit #5181ea579a" href="https://github.com/jquery/jquery-mobile/commit/5181ea579ae3580d4513a2e5c25b3bac7003f60b">Make sure the popup is closed on destroy (including cleanup)</a>  &#8212; Popup code refactoring</p>
+<p><a title="goto commit #5463fc84dc" href="https://github.com/jquery/jquery-mobile/commit/5463fc84dcadb92137bb11b86efcff20d88cb102">On WP7, you get &#8220;&#8221; for an empty background, not undefined, like in IE8</a>  &#8212; Fix for a WP7 popup issue.</p>
+<p><a title="goto commit #3b40d0374c" href="https://github.com/jquery/jquery-mobile/commit/3b40d0374c11ccae31ada39e5813927abb2376f9">Perform the visual open only when the nav hook has been acquired</a> <span class="issue">(Issue: <a title="[JQM 1.2.0 beta 1] Issue with custom select menus in Safari (iOS 5.1.1, iPad 2 and iPad 3)" href="https://github.com/jquery/jquery-mobile/issues/4949">#4949</a>)</span> &#8212; Fixed an iOS popup / custom select positioning issue.</p>
+<p><a title="goto commit #e8ef2b015d" href="https://github.com/jquery/jquery-mobile/commit/e8ef2b015dde5e45a643707ada8835e716bb0418">Prevent positioning context bug for close buttons within popups in Opera Mini</a></p>
+<p><a title="goto commit #242cf05850" href="https://github.com/jquery/jquery-mobile/commit/242cf05850f45f8bf23b7373f6635394d9664f36">Properly handle popups in dialogs, make sure dialog closes on page changes</a>  &#8212; Refactoring popup chaining from dialogs to keep proper page navigation and URL history.</p>
+<p><a title="goto commit #d9803a20be" href="https://github.com/jquery/jquery-mobile/commit/d9803a20be5784f13f1feff46d9c1283ce372f4c">Remove default fade animation from popup overlays.</a> <span class="issue">(Issue: <a title="Default popup overlay fade animation causing rendering issue on Android 4.0.x Chrome" href="https://github.com/jquery/jquery-mobile/issues/4915">#4915</a>)</span> &#8212; The CSS-based fade in/out transition on the themed overlay causes similar visual stacking bugs as fixed toolbars in Chrome. This was addressed by removing the fade behavior on the overlay. Testing revealed that not animating the opacity of the overlay made the popup display significantly faster so this change is now applied across the board. The overlay now pops into place without a transition.</p>
+<p><a title="goto commit #84163152be" href="https://github.com/jquery/jquery-mobile/commit/84163152be7e2344976cc20f4b896cf87315b1f7">Remove link focus, unwind stack before applying focus and tabindex</a>  &#8212; To prevent popup transition issues on Android 4.0 devices, the order of applying focus and tabindex was changed when popups are opened.</p>
+<p><a title="goto commit #7a14aadd06" href="https://github.com/jquery/jquery-mobile/commit/7a14aadd060bf24bd164910873167d4f2214eff9">Remove styles related to popup overlay fade</a>  &#8212; Tidied up popup CSS after removing overlay-transitions.</p>
+<p><a title="goto commit #015377ff30" href="https://github.com/jquery/jquery-mobile/commit/015377ff30411ce48d1d723946eec9f9e2b877f5">Resolve the popup screen deferred immediately</a>  &#8212; Popup refactoring.</p>
+<p><a title="goto commit #7ea42af72c" href="https://github.com/jquery/jquery-mobile/commit/7ea42af72c5323d80287fb34409744e006354c14">Restrict the application of the exclusions to the recording of the new option value in the data-* attributes. Do still chain up to mobile.widget with every option.</a>  &#8212; Popup widget improvement.</p>
+<p><a title="goto commit #8b52631375" href="https://github.com/jquery/jquery-mobile/commit/8b52631375b112992c44f8acf4448de6a1c861e2">Reuse dialog hash if already present and tack on another if it is part of the initial hash</a> <span class="issue">(Issue: <a title="1.2.0 beta 1 Popups: Hash ui-state dialog and refreshing kills popups" href="https://github.com/jquery/jquery-mobile/issues/4994">#4994</a>)</span> &#8212; Popup refactoring to support browser refresh when a popup is open.</p>
+<p><a title="goto commit #7bdf276c83" href="https://github.com/jquery/jquery-mobile/commit/7bdf276c83e3e3f9270e760c92c95094d7bcaa63">The popup screen leaves a 1px gap at the bottom of the screen to avert Android 4.0 hangage</a>  &#8212; Popups now get a 1 Pixel bottom gap due to an display issue on Android 4.0.</p>
+<p><a title="goto commit #c029054ceb" href="https://github.com/jquery/jquery-mobile/commit/c029054ceb5ebca66320b198cac89d6bbfd13d69">Unhook hash listeners from popup when aborting</a></p>
+<p><a title="goto commit #b0e6839da5" href="https://github.com/jquery/jquery-mobile/commit/b0e6839da5aeee63faf136e72b71bc834e0c8cad">Use $.inArray, because IE does not seem to have .indexOf() on arrays</a></p>
+<p><a title="goto commit #cfdc782b3d" href="https://github.com/jquery/jquery-mobile/commit/cfdc782b3d6e3600f60392adbf87f8f3c4ddefa2">Use just the hash as a selector in IE7/WP 7.0</a> <span class="issue">(Issue: <a title="Popup doesn't open in IE7/WP7.0" href="https://github.com/jquery/jquery-mobile/issues/4917">#4917</a>)</span> &#8212; Fixed an IE7/Windows Phone 7.0 popup open issue caused by the handling of hashes and absolute hrefs in that browsers.</p>
+<p><a title="goto commit #c21100aa9e" href="https://github.com/jquery/jquery-mobile/commit/c21100aa9e232fd923e85f976a0f00225797c098">Use new ._on() binding method to attach handlers such that they are removed upon _destroy()</a></p>
+<p><a title="goto commit #b9768954d7" href="https://github.com/jquery/jquery-mobile/commit/b9768954d7482b4236932affe1771b673d6e767d">Use ui-overlay-* for overlay theme</a>  &#8212; Popups overlay now use the ui-overlay class</p>
+<p><a title="goto commit #e4b0aca053" href="https://github.com/jquery/jquery-mobile/commit/e4b0aca0538004aaaad92594287791c99d101995">Use widget factory to trigger events</a></p>
+<p><a title="goto commit #5959db0b06" href="https://github.com/jquery/jquery-mobile/commit/5959db0b0649921de607b03965fb11d5d6f78e89">Using &#8220;position: fixed&#8221; blacklist to fix popup overlays in browsers that know what they are doing with &#8220;position: fixed&#8221; to avoid monstrous overlays on long pages in some cases.</a></p>
+<h3 class="widget-header">Select</h3>
+<p><a title="goto commit #73631d38d7" href="https://github.com/jquery/jquery-mobile/commit/73631d38d799a36854a31d03a9bc599e3cf871bd">Add ui-btn-down- to initially focused menu item to make tab selection consistent</a></p>
+<p><a title="goto commit #20b3e9dc03" href="https://github.com/jquery/jquery-mobile/commit/20b3e9dc03138fb36acdea0f38bf65b99efe27ec">Event timing difference in iOS 6 was causing zoom to be disabled and immediately re-enabled prior to the zoom taking place</a> <span class="issue">(Issue: <a title="Selects zoom page when tapped in iOS6" href="https://github.com/jquery/jquery-mobile/issues/5041">#5041</a>)</span> &#8212; Fix for iOS 6 which reintroduces a select input page-zoom issue.</p>
+<h3 class="widget-header">Slider</h3>
+<p><a title="goto commit #34ae4fa03e" href="https://github.com/jquery/jquery-mobile/commit/34ae4fa03ed510808f39b222e061f9c99771c005">Bind to sliders vmouseup for refresh</a> <span class="issue">(Issue: <a title="Slider input alterations update the slider ui on blur" href="https://github.com/jquery/jquery-mobile/issues/4756">#4756</a>)</span> &#8212; Browsers like Chrome provide an up and down arrow for range/number inputs but they don&#8217;t fire the change event until the control is blurred. We now bind to the mouseup event and check if the value has been altered. If it has, we refresh now the slider position to reflect the value change.</p>
+<p><a title="goto commit #f64ae536a6" href="https://github.com/jquery/jquery-mobile/commit/f64ae536a68e85c754a9af91ee0698af122e7807">Correct slider to use _on, and guard the unbinding test</a></p>
+<p><a title="goto commit #1b21831941" href="https://github.com/jquery/jquery-mobile/commit/1b218319415b88c10a195c555646c124bfb7277a">Increase level of specificity to avoid conflicts when sliders used in a grid</a> <span class="issue">(Issue: <a title="[JQM 1.2.0 beta] Slider button is displayed too much to the right" href="https://github.com/jquery/jquery-mobile/issues/4944">#4944</a>)</span> &#8212; CSS improvement for sliders to be more solid when placed in grids.</p>
+<p><a title="goto commit #39f500a0f6" href="https://github.com/jquery/jquery-mobile/commit/39f500a0f66a09655be21153d3c351ec56419b56">Merge branch &#8216;memory-leaks&#8217;</a>  &#8212; Slider widget functional and memory improvements</p>
+<p><a title="goto commit #8275474afb" href="https://github.com/jquery/jquery-mobile/commit/8275474afbd7660b2a855b0eac4aafb1134e6174">Move _preventDocumentDrag function into the widget prototype and attach it with ._on() to ensure removal upon destroy()</a></p>
+<p><a title="goto commit #3593a88933" href="https://github.com/jquery/jquery-mobile/commit/3593a889333a1a60e0e3ad66d9a5067b1e374682">Move _sliderMouseUp function into the widget prototype and attach it with ._on() to ensure removal upon destroy()</a></p>
+<p><a title="goto commit #8aae702050" href="https://github.com/jquery/jquery-mobile/commit/8aae7020502e8ac4154f6604873bf03df85fe90d">Partly fixes an issue on Safari/Mac where the input width is decreased when the browser implements the spinner</a></p>
+<p><a title="goto commit #e0a27f8c0d" href="https://github.com/jquery/jquery-mobile/commit/e0a27f8c0de0792aad798f75209b1fba9f5ed19b">Stop the call structure for slider updates earlier on disabled inputs</a> <span class="issue">(Issues: <a title="disabled slider still allows scrubber to be moved in IE8" href="https://github.com/jquery/jquery-mobile/issues/3058">#3058</a> <a title="Slider disabling doesn't work in IE 9 and IE10" href="https://github.com/jquery/jquery-mobile/issues/4770">#4770</a>)</span> &#8212; Improved behavior for disabled sliders.</p>
+<p><a title="goto commit #98dfce2338" href="https://github.com/jquery/jquery-mobile/commit/98dfce233874a8c7cde281cab4e5fc0f0c752eee">Support slidestart and slidestop events</a> <span class="issue">(Issue: <a title="Feature Request: Slider Change Event" href="https://github.com/jquery/jquery-mobile/issues/1589">#1589</a>)</span> &#8212; Sliders now support slidestart and slidestop events</p>
+<h3 class="widget-header">Textinput</h3>
+<p><a title="goto commit #34220031ce" href="https://github.com/jquery/jquery-mobile/commit/34220031ce30e80a47e7fd49a22f4bfac6ec0733">Move _keyup function into the widget prototype and attach it with ._on() to ensure removal upon destroy()</a></p>
+<p><a title="goto commit #3a23ee166a" href="https://github.com/jquery/jquery-mobile/commit/3a23ee166a98c68df5c23db21d5591e351dd9aba">Unbind document handlers to prevent memory leaks on textinput</a></p>
+<h3 class="widget-header">Toolbar</h3>
+<p><a title="goto commit #32b1b45ade" href="https://github.com/jquery/jquery-mobile/commit/32b1b45ade9f049431161ca24931693b30b4b863">A negative indent of -99999em can cause native Android 4.x to freak out, since its so absurdly high. Switched to -9999px.</a></p>
+<p><a title="goto commit #89b138e1dd" href="https://github.com/jquery/jquery-mobile/commit/89b138e1dd561d530349d18e9d9b0a894c5ec6ed">Added class ui-popup to tapToggleBlacklist</a>  &#8212; The tap toggle feature for fixed toolbars now is disabled when popups are open.</p>
+<p><a title="goto commit #0992512916" href="https://github.com/jquery/jquery-mobile/commit/09925129166a2fa62bb96e3244e82bef26dacdb3">Fix for fixed persistent toolbar padding issues</a> <span class="issue">(Issues: <a title="fixed header overrides page" href="https://github.com/jquery/jquery-mobile/issues/4176">#4176</a> <a title="Height not being calculated properly" href="https://github.com/jquery/jquery-mobile/issues/4219">#4219</a>)</span> &#8212; Content of pages with fixed persistent toolbars higher than standard, now gets the right alignment. Thanks <a title="Thanks MauriceG!" href="https://github.com/MauriceG">MauriceG</a>!</p>
+<p><a title="goto commit #5a6b2c3acf" href="https://github.com/jquery/jquery-mobile/commit/5a6b2c3acfc72de4d0ae773ed0e076ef37bac1a5">Prevent `0` from being appended to the document when using a persistent footer with jQuery 1.8.x</a> <span class="issue">(Issue: <a title="https://github.com/jquery/jquery-mobile/issues/4887" href="https://github.com/jquery/jquery-mobile/issues/4887">#4887</a>)</span></p>
+<h3 class="widget-header">Widget Factory</h3>
+<p><a title="goto commit #225be4aef6" href="https://github.com/jquery/jquery-mobile/commit/225be4aef61375345e7219fe0e27e60fd7363460">Upgrade widget factory to 1.9 beta version</a> <span class="issue">(Issue: <a title="Upgrade widget factory to 1.9 beta version" href="https://github.com/jquery/jquery-mobile/issues/4629">#4629</a>)</span></p>
+<h2 id="download">Download</h2>
+<p><strong>CDN-Hosted JavaScript:</strong></p>
+<ul>
+<li><a href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.js">Uncompressed: jquery.mobile-1.2.0.js</a> (useful for debugging)</li>
+<li><a href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js">Minified and Gzipped: jquery.mobile-1.2.0.min.js</a> (24KB, ready to deploy)</li>
+</ul>
+<p><strong>CDN-Hosted CSS:</strong></p>
+<ul>
+<li><a href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.css">Uncompressed with Default theme: jquery.mobile-1.2.0.css</a> (useful for debugging)</li>
+<li><a href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">Minified and Gzipped with Default theme: jquery.mobile-1.2.0.min.css</a> (7KB, ready to deploy)</li>
+<li><a href="http://code.jquery.com/mobile/1.2.0/jquery.mobile.structure-1.2.0.css">Uncompressed structure <strong>without a theme</strong>: jquery.mobile-1.2.0.css</a> (useful for theme development)</li>
+<li><a href="http://code.jquery.com/mobile/1.2.0/jquery.mobile.structure-1.2.0.min.css">Minified and Gzipped structure <strong>without a theme</strong>: jquery.mobile-1.2.0.min.css</a> (6KB, ready to deploy)</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>Copy-and-Paste Snippet for CDN-hosted files (recommended):</strong></p>
+<pre style="font-size: 12px; line-height: 155%; margin-bottom: 2px;">&lt;link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" /&gt;
+&lt;script src="http://code.jquery.com/jquery-1.8.2.min.js"&gt;&lt;/script&gt;
+&lt;script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"&gt;&lt;/script&gt;</pre>
+<p>&nbsp;</p>
+<p><strong>ZIP File:<br />
+</strong>If you want to host the files yourself you can download a zip of all the files:</p>
+<ul>
+<li><a href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.zip">Zip File: jquery.mobile-1.2.0.zip</a> (JavaScript, CSS, and images)</li>
+</ul>
+<p><strong>Microsoft CDN hosted jQuery Mobile files:</strong></p>
+<ul>
+<li><a href="http://www.asp.net/ajaxLibrary/CDN.ashx#jQuery_Mobile_Releases_on_the_CDN_3">http://www.asp.net/ajaxLibrary/CDN.ashx</a></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>Fork jQuery Mobile on GitHub</strong><br />
+<a href="https://github.com/jquery/jquery-mobile">https://github.com/jquery/jquery-mobile</a></p>
+<h2 id="platforms">Platform support in 1.2.0</h2>
+<p>jQuery Mobile has broad support for the vast majority of all modern desktop, smartphone, tablet, and e-reader platforms. In addition, feature phones and older browsers are supported because of our progressive enhancement approach. We&#8217;re very proud of our commitment to universal accessibility through our broad support for all popular platforms.</p>
+<p>We use a 3-level graded platform support system: <strong>A</strong> (full), <strong>B</strong> (full minus Ajax), <strong>C</strong> (basic HTML). The visual fidelity of the experience and smoothness of page transitions are highly dependent on the CSS rendering capabilities of the device and platform so not all A grade experience will be pixel-perfect but that&#8217;s the nature of the web.</p>
+<p>* <strong>Note</strong>: If jQuery core 1.8+ is used with jQuery Mobile, iOS 3.x and BB5 are re-graded to C level support because core dropped support for methods these platforms need for full functionality.</p>
+<h3 style="display: block; font-size: 16px !important; font-weight: normal; background: #e6e6e6; border-left: 7px solid #74B64A; padding: 5px 0 5px 8px;"><strong> A-grade</strong> &#8211; Full enhanced experience with Ajax-based animated page transitions.</h3>
+<ul>
+<li><strong>Apple iOS 3.2*-6.0</strong> - Tested on the original iPad (4.3 / 5.0), iPad 2 (4.3), iPad 3 (5.1 / 6.0), original iPhone (3.1), iPhone 3 (3.2), 3GS (4.3), 4 (4.3 / 5.0), and 4S (5.1 / 6.0)</li>
+<li><strong>Android 2.1-2.3</strong> &#8211; Tested on the HTC Incredible (2.2), original Droid (2.2), HTC Aria (2.1), Google Nexus S (2.3). Functional on 1.5 &amp; 1.6 but performance may be sluggish, tested on Google G1 (1.5)</li>
+<li><strong>Android 3.2 (Honeycomb) </strong> &#8211; Tested on the Samsung Galaxy Tab 10.1 and Motorola XOOM</li>
+<li><strong>Android 4.0 (ICS) </strong> &#8211; Tested on a Galaxy Nexus. Note: transition performance can be poor on <em>upgraded</em> devices</li>
+<li><strong>Android 4.1 (Jelly Bean) </strong> &#8211; Tested on a Galaxy Nexus and Galaxy 7</li>
+<li><strong>Windows Phone 7-7.5</strong> &#8211; Tested on the HTC Surround (7.0) HTC Trophy (7.5), LG-E900 (7.5), Nokia Lumia 800</li>
+<li><strong>Blackberry 6.0</strong> &#8211; Tested on the Torch 9800 and Style 9670</li>
+<li><strong>Blackberry 7</strong> &#8211; Tested on BlackBerry® Torch 9810</li>
+<li><strong>Blackberry Playbook (1.0-2.0)</strong> &#8211; Tested on PlayBook</li>
+<li><strong>Palm WebOS (1.4-2.0)</strong> &#8211; Tested on the Palm Pixi (1.4), Pre (1.4), Pre 2 (2.0)</li>
+<li><strong>Palm WebOS 3.0 </strong> &#8211; Tested on HP TouchPad</li>
+<li><strong>Firefox Mobile 15</strong> &#8211; Tested on Android 2.3 and 4.1 devices</li>
+<li><strong>Chrome for Android 18</strong> &#8211; Tested on Android 4.0 and 4.1 devices</li>
+<li><strong>Skyfire 4.1</strong> - Tested on Android 2.3 device</li>
+<li><strong>Opera Mobile 11.5-12</strong>: Tested on Android 2.3</li>
+<li><strong>Meego 1.2</strong> &#8211; Tested on Nokia 950 and N9</li>
+<li><strong>Tizen</strong> (pre-release) &#8211; Tested on early hardware</li>
+<li><strong>Samsung Bada 2.0</strong> &#8211; Tested on a Samsung Wave 3, Dolphin browser</li>
+<li><strong>UC Browser</strong> &#8211; Tested on Android 2.3 device</li>
+<li><strong>Kindle 3 and Fire </strong> - Tested on the built-in WebKit browser for each</li>
+<li><strong>Nook Color 1.4.1</strong> &#8211; Tested on original Nook Color, not Nook Tablet</li>
+<li><strong>Chrome <strong>Desktop </strong>11-21</strong> - Tested on OS X 10.7 and Windows 7</li>
+<li><strong>Safari <strong>Desktop </strong>4-5</strong> - Tested on OS X 10.7 and Windows 7</li>
+<li><strong>Firefox Desktop 4-15</strong> &#8211; Tested on OS X 10.7 and Windows 7</li>
+<li><strong>Internet Explorer 7-10</strong> &#8211; Tested on Windows XP, Vista and 7</li>
+<li><strong>Opera Desktop 10-12</strong> - Tested on OS X 10.7 and Windows 7</li>
+</ul>
+<h3 style="display: block; font-size: 16px !important; font-weight: normal; background: #e6e6e6; border-left: 7px solid #6699cc; padding: 5px 0 5px 8px;"><strong>B-grade</strong> &#8211; Enhanced experience except without Ajax navigation features.</h3>
+<ul>
+<li><strong>Blackberry 5.0*</strong>: Tested on the Storm 2 9550, Bold 9770</li>
+<li><strong>Opera Mini 7</strong> - Tested on iOS 5.1 and Android 2.3</li>
+<li><strong>Nokia Symbian^3 </strong>- Tested on Nokia N8 (Symbian^3), C7 (Symbian^3), also works on N97 (Symbian^1)</li>
+</ul>
+<h3 style="display: block; font-size: 16px !important; font-weight: normal; background: #e6e6e6; border-left: 7px solid #FFCC33; padding: 5px 0 5px 8px;"><strong>C<strong>-grade</strong></strong> &#8211; Basic, non-enhanced HTML experience that is still functional</h3>
+<ul>
+<li><strong>Blackberry 4.x</strong> - Tested on the Curve 8330</li>
+<li><strong>Windows Mobile</strong> - Tested on the HTC Leo (WinMo 5.2)</li>
+<li><strong>All older smartphone platforms and featurephones</strong> &#8211; Any device that doesn&#8217;t support media queries will receive the basic, C grade experience</li>
+</ul>
+</div>
+    
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-1515">
+        <div id="dsq-comment-header-1515" class="dsq-comment-header">
+            <cite id="dsq-cite-1515">
+http://twitter.com/hungnd                <span id="dsq-author-user-1515">Hung Nguyen Dinh</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1515" class="dsq-comment-body">
+            <div id="dsq-comment-message-1515" class="dsq-comment-message"><p>congratulations!</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-1516">
+        <div id="dsq-comment-header-1516" class="dsq-comment-header">
+            <cite id="dsq-cite-1516">
+http://www.facebook.com/iB3nji                <span id="dsq-author-user-1516">Ben Danyi</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1516" class="dsq-comment-body">
+            <div id="dsq-comment-message-1516" class="dsq-comment-message"><p>Finally jQuery Mobile is coming useful for me in a PhoneGap App. Page transitions seem to finally be fixed. Further speed increases will be nice. 1.2.0 is still early days though! Amazing what right up to  2.0 will be like!</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-1517">
+        <div id="dsq-comment-header-1517" class="dsq-comment-header">
+            <cite id="dsq-cite-1517">
+http://www.facebook.com/zoran123456                <span id="dsq-author-user-1517">Zoran Bošnjak</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1517" class="dsq-comment-body">
+            <div id="dsq-comment-message-1517" class="dsq-comment-message"><p>great, thank you very much ! Will use it asap. Anyone knows what features will version 1.3 have ? Is there any roadmap or similar ?</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-1518">
+        <div id="dsq-comment-header-1518" class="dsq-comment-header">
+            <cite id="dsq-cite-1518">
+                <span id="dsq-author-user-1518">webastan</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1518" class="dsq-comment-body">
+            <div id="dsq-comment-message-1518" class="dsq-comment-message"><p>Thanks for this Great work! add my site as an user ! <a href="http://www.webastan.com/m" rel="nofollow">http://www.webastan.com/m</a><br />
+thanks again and thanks again !</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-1519">
+        <div id="dsq-comment-header-1519" class="dsq-comment-header">
+            <cite id="dsq-cite-1519">
+http://www.facebook.com/MatthewRayWilliams                <span id="dsq-author-user-1519">Matthew Williams</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1519" class="dsq-comment-body">
+            <div id="dsq-comment-message-1519" class="dsq-comment-message"><p>Congrats.  We will be taking this live to production in the next few weeks.  Incredible work!</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-1520">
+        <div id="dsq-comment-header-1520" class="dsq-comment-header">
+            <cite id="dsq-cite-1520">
+                <span id="dsq-author-user-1520">Matthias Gidda</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1520" class="dsq-comment-body">
+            <div id="dsq-comment-message-1520" class="dsq-comment-message"><p>Thanks for the new release!</p>
+<p>I wonder if the fix for transitions flickering on iOS in PhoneGap (as discussed here: <a href="https://github.com/jquery/jquery-mobile/commit/d89a919fb0f5e902934d0179b73baacb0cc4fc2f#commitcomment-1590064" rel="nofollow">https://github.com/jquery/jquery-mobile/commit/d89a919fb0f5e902934d0179b73baacb0cc4fc2f#commitcomment-1590064</a>) is included in this release? At GitHub, uGoMobi said it will be put back into 1.1.2, but 1.1.2 never happened.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-1524">
+        <div id="dsq-comment-header-1524" class="dsq-comment-header">
+            <cite id="dsq-cite-1524">
+                <span id="dsq-author-user-1524">Jerry</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1524" class="dsq-comment-body">
+            <div id="dsq-comment-message-1524" class="dsq-comment-message"><p>Great work! Tested on Galaxy Nexus, Transformer TF101 &amp; TF700, Nexus 7, BlackBerry 9810 and iPhone 4s &amp; 5 but still have flicking within Apache Cordova. The smooth transition is now the most expecting feature. Please continue great work.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-1525">
+        <div id="dsq-comment-header-1525" class="dsq-comment-header">
+            <cite id="dsq-cite-1525">
+                <span id="dsq-author-user-1525">Jerry</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1525" class="dsq-comment-body">
+            <div id="dsq-comment-message-1525" class="dsq-comment-message"><p>Great work! Tested on Galaxy Nexus, Transformer TF101 &amp; TF700, Nexus 7, BlackBerry 9810 and iPhone 4s &amp; 5 but still have flicking within Apache Cordova. The smooth transition is now the most expecting feature. Please continue great work.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://jquerymobile.com/blog/2012/10/02/announcing-jquery-mobile-1-2-0-final/';
+    var disqus_identifier = '3109 http://jquerymobile.com/?p=3109';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'jquerymobile';
+    var disqus_title = "Announcing jQuery Mobile 1.2.0 Final";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            DISQUS.request.get('?cf_action=sync_comments&post_id=3109');
+        });
+                    };
+    var facebookXdReceiverPath = 'http://jquerymobile.com/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/jquerymobile.com\/blog\/2012\/10\/02\/announcing-jquery-mobile-1-2-0-final\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+        dsq.src = 'http' + '://' + disqus_shortname + '.' + disqus_domain + '/embed.js?pname=wordpress&pver=2.72';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+  </article>
+
+
+    <footer id="footer">
+      <p id="jq-copyright">&copy; 2010-12 <a href="http://jquery.org/">The jQuery Foundation</a></p> 
+              <p id="jq-hosting">Sponsored by <a href="http://mediatemple.net" class="jq-mediaTemple">Media Temple</a>, <a href="#project-sponsors">Mobile Project Sponsors</a> and <a href="http://jquery.org/sponsors">Others</a>.</p>
+    </footer>
+  </section>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <!--<script src="http://jquerymobile.com/wp-content/themes/jquery-mobile/js/site.js"></script>-->
+<script type="text/javascript">
+var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-1076265-1']); _gaq.push(['_trackPageview']); _gaq.push(['_setDomainName', '.jquerymobile.com']);
+(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);})();
+</script>
+    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'jquerymobile';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'http://disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+</body>
+</html>
+
+<!-- Dynamic page generated in 0.374 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2012-10-05 23:40:55 -->
+<!-- super cache -->

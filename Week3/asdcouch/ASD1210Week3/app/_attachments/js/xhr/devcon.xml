@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<devcons>
+	<name>devcons</name>
+	<description>Posts of fury and release</description>
+	<forgivelits>
+		<name>The 3 Steps of Repentance</name>
+		<friend>i-Forgive</friend>
+		<email>info@i-forgive.com</email>
+		<date>07/15/2012</date>
+		<incident>Famous Quotes</incident>
+		<genre>http://www.tranquilityisyours.com/</genre>
+		<website>2 Corinthians</website>
+		<socials>devcons</socials>
+		<length>90</length>
+		<action>&quot;Eat right and exercise &quot; Handle important tasks first and eliminate unessential tasks</action>
+	</forgivelits>
+	<forgivelits>
+		<name>My anger is at Devcon 5 </name>
+		<friend>Tony Stark</friend>
+		<email>info@i-forgive.com</email>
+		<date>07/19/2012</date>
+		<incident>Tools</incident>
+		<genre>Popular</genre>
+		<website>FaceBook</website>
+		<socials>devcons</socials>
+		<length>90</length>
+		<action> </action>
+	</forgivelits>
+	<forgivelits>
+		<name>Bombs Away my anger is gone now!</name>
+		<friend>i-Forgive</friend>
+		<email>info@i-forgive.com</email>
+		<date>07/09/2012</date>
+		<incident>Famous Quotes</incident>
+		<genre></genre>
+		<website>1 Thessalonians</website>
+		<socials>devcons</socials>
+		<length>90</length>
+		<action>&quot;Take a break and meditate to slow down "mind-racing"&quot; Reduce the urge to be "perfect"</action>
+	</forgivelits>
+	<forgivelits>
+		<name>Road Rage! Calling in a missle strike!</name>
+		<friend>i-Forgive</friend>
+		<email>info@i-forgive.com</email>
+		<date>07/29/2012</date>
+		<incident>Tools</incident>
+		<genre>Popular</genre>
+		<website>http://www.tranquilityisyours.com/stress-relief-tips.html</website>
+		<socials>devcons</socials>
+		<length>90</length>
+		<action>&quot;Avoid excessive competition &quot;Reduce criticism of yourself and others</action>
+	</forgivelits>
+</devcons>
