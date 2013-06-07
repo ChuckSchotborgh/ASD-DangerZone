@@ -3,7 +3,7 @@
     _create: function() {
       // Set the theme before we call the prototype, which will 
       // ensure buttonMarkup() correctly grabs the inheritied theme.
-      // We default to the "a" swatch if none is found
+      // We default to the "a" swatch if none is found 
       var theme = this.element.jqmData('theme') || "a";
       this.element.addClass('ui-footer ui-footer-fixed ui-bar-' + theme);
 
@@ -11,7 +11,7 @@
       this.element.closest('[data-role="page"]').addClass('ui-page-footer-fixed');
 
 
-      // Call the NavBar _create prototype
+      // Call the NavBar _create prototype 2014 MathborghStudios
       $.mobile.navbar.prototype._create.call(this);
     },
 
