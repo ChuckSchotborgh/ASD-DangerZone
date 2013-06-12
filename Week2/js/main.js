@@ -32,14 +32,14 @@
     var postID= getUrlVars()["postID"];
     var category = getUrlVars()["cat"];
 
-        $('#viewForgivePost').live
+        $('#viewForgivePost').on
             ('pagehide', function (event) {
             
         $('#viewForgivePost #content').remove();
     
     });
 
-        $('#viewForgivePost').live
+        $('#viewForgivePost').on
             ('pageshow', function (event) {
             
         $('<div></div>').attr
@@ -85,7 +85,7 @@
 
 
 });
-        $('div[data-role="page"]').live
+        $('div[data-role="page"]').on
             ('pageshow', function (event) {
         
     if (localStorage.length > 0){
@@ -141,7 +141,7 @@
 
 // BLASTOFF NOTICE LIST VIEW BUTTON \\__________________________________________
     
-        $('#blast-off').live
+        $('#blast-off').on
             ('pageinit', function (event) {
                 
                 localStorage.clear();
@@ -207,7 +207,7 @@
 
 // DEVCON 5 NOTICE LIST VIEW BUTTON \\__________________________________________
 
-        $("#devcon").live
+        $("#devcon").on
             ('pageinit', function (event) {
                 
                 localStorage.clear();
@@ -275,7 +275,7 @@
 
 // BOMBS AWAY NOTICE LIST VIEW BUTTON \\________________________________________
 
-        $('#bombs-away').live
+        $('#bombs-away').on
             ('pageinit', function (event) {
                 
                 localStorage.clear();
@@ -452,7 +452,7 @@
         
 // MISSILES AWAY NOTICE LIST VIEW BUTTON \\_____________________________________
 
-        $('#missiles').live
+        $('#missiles').on
             ('pageinit', function (event) {
                 
                 localStorage.clear();
