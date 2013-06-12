@@ -1,1 +1,9 @@
 // write your CSS in here
+
+
+#slider {
+    width: 300px;
+}
+#slider li {
+    width: 150px;
+}
