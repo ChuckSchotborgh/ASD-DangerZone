@@ -100,7 +100,7 @@
             
 // BURN NOTICE BUTTON \\________________________________________________________
 
-        $('#Burns').live
+        $('#Burns').on 
             ('pageinit', function (event) {
                 
                 localStorage.clear();
@@ -289,7 +289,7 @@
     $.ajax({
         url: 'js/xhr/bombs.csv',
         type: 'GET',
-        dataType: 'text',
+        dataType: 'csv',
         success: function (actions) {
                
                     var text = [];
